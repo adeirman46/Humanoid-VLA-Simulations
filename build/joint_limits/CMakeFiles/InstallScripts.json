@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/joint_limits/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/joint_limits/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -57,10 +57,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,6 +223,123 @@ joint_trajectory_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_trajectory_controller.dir/build.make CMakeFiles/joint_trajectory_controller.dir/build
 .PHONY : joint_trajectory_controller/fast
 
+#=============================================================================
+# Target rules for targets named test_trajectory
+
+# Build rule for target.
+test_trajectory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_trajectory
+.PHONY : test_trajectory
+
+# fast build rule for target.
+test_trajectory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory.dir/build.make CMakeFiles/test_trajectory.dir/build
+.PHONY : test_trajectory/fast
+
+#=============================================================================
+# Target rules for targets named test_tolerances
+
+# Build rule for target.
+test_tolerances: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_tolerances
+.PHONY : test_tolerances
+
+# fast build rule for target.
+test_tolerances/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tolerances.dir/build.make CMakeFiles/test_tolerances.dir/build
+.PHONY : test_tolerances/fast
+
+#=============================================================================
+# Target rules for targets named test_trajectory_controller
+
+# Build rule for target.
+test_trajectory_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_trajectory_controller
+.PHONY : test_trajectory_controller
+
+# fast build rule for target.
+test_trajectory_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_controller.dir/build.make CMakeFiles/test_trajectory_controller.dir/build
+.PHONY : test_trajectory_controller/fast
+
+#=============================================================================
+# Target rules for targets named test_load_joint_trajectory_controller
+
+# Build rule for target.
+test_load_joint_trajectory_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_load_joint_trajectory_controller
+.PHONY : test_load_joint_trajectory_controller
+
+# fast build rule for target.
+test_load_joint_trajectory_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_load_joint_trajectory_controller.dir/build.make CMakeFiles/test_load_joint_trajectory_controller.dir/build
+.PHONY : test_load_joint_trajectory_controller/fast
+
+#=============================================================================
+# Target rules for targets named test_trajectory_actions
+
+# Build rule for target.
+test_trajectory_actions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_trajectory_actions
+.PHONY : test_trajectory_actions
+
+# fast build rule for target.
+test_trajectory_actions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_actions.dir/build.make CMakeFiles/test_trajectory_actions.dir/build
+.PHONY : test_trajectory_actions/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f gmock/CMakeFiles/gmock.dir/build.make gmock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f gmock/CMakeFiles/gmock_main.dir/build.make gmock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/joint_trajectory_controller.o: src/joint_trajectory_controller.cpp.o
 .PHONY : src/joint_trajectory_controller.o
 
@@ -271,6 +388,126 @@ src/trajectory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/joint_trajectory_controller.dir/build.make CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.s
 .PHONY : src/trajectory.cpp.s
 
+test/test_load_joint_trajectory_controller.o: test/test_load_joint_trajectory_controller.cpp.o
+.PHONY : test/test_load_joint_trajectory_controller.o
+
+# target to build an object file
+test/test_load_joint_trajectory_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_load_joint_trajectory_controller.dir/build.make CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.o
+.PHONY : test/test_load_joint_trajectory_controller.cpp.o
+
+test/test_load_joint_trajectory_controller.i: test/test_load_joint_trajectory_controller.cpp.i
+.PHONY : test/test_load_joint_trajectory_controller.i
+
+# target to preprocess a source file
+test/test_load_joint_trajectory_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_load_joint_trajectory_controller.dir/build.make CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.i
+.PHONY : test/test_load_joint_trajectory_controller.cpp.i
+
+test/test_load_joint_trajectory_controller.s: test/test_load_joint_trajectory_controller.cpp.s
+.PHONY : test/test_load_joint_trajectory_controller.s
+
+# target to generate assembly for a file
+test/test_load_joint_trajectory_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_load_joint_trajectory_controller.dir/build.make CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.s
+.PHONY : test/test_load_joint_trajectory_controller.cpp.s
+
+test/test_tolerances.o: test/test_tolerances.cpp.o
+.PHONY : test/test_tolerances.o
+
+# target to build an object file
+test/test_tolerances.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tolerances.dir/build.make CMakeFiles/test_tolerances.dir/test/test_tolerances.cpp.o
+.PHONY : test/test_tolerances.cpp.o
+
+test/test_tolerances.i: test/test_tolerances.cpp.i
+.PHONY : test/test_tolerances.i
+
+# target to preprocess a source file
+test/test_tolerances.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tolerances.dir/build.make CMakeFiles/test_tolerances.dir/test/test_tolerances.cpp.i
+.PHONY : test/test_tolerances.cpp.i
+
+test/test_tolerances.s: test/test_tolerances.cpp.s
+.PHONY : test/test_tolerances.s
+
+# target to generate assembly for a file
+test/test_tolerances.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tolerances.dir/build.make CMakeFiles/test_tolerances.dir/test/test_tolerances.cpp.s
+.PHONY : test/test_tolerances.cpp.s
+
+test/test_trajectory.o: test/test_trajectory.cpp.o
+.PHONY : test/test_trajectory.o
+
+# target to build an object file
+test/test_trajectory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory.dir/build.make CMakeFiles/test_trajectory.dir/test/test_trajectory.cpp.o
+.PHONY : test/test_trajectory.cpp.o
+
+test/test_trajectory.i: test/test_trajectory.cpp.i
+.PHONY : test/test_trajectory.i
+
+# target to preprocess a source file
+test/test_trajectory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory.dir/build.make CMakeFiles/test_trajectory.dir/test/test_trajectory.cpp.i
+.PHONY : test/test_trajectory.cpp.i
+
+test/test_trajectory.s: test/test_trajectory.cpp.s
+.PHONY : test/test_trajectory.s
+
+# target to generate assembly for a file
+test/test_trajectory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory.dir/build.make CMakeFiles/test_trajectory.dir/test/test_trajectory.cpp.s
+.PHONY : test/test_trajectory.cpp.s
+
+test/test_trajectory_actions.o: test/test_trajectory_actions.cpp.o
+.PHONY : test/test_trajectory_actions.o
+
+# target to build an object file
+test/test_trajectory_actions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_actions.dir/build.make CMakeFiles/test_trajectory_actions.dir/test/test_trajectory_actions.cpp.o
+.PHONY : test/test_trajectory_actions.cpp.o
+
+test/test_trajectory_actions.i: test/test_trajectory_actions.cpp.i
+.PHONY : test/test_trajectory_actions.i
+
+# target to preprocess a source file
+test/test_trajectory_actions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_actions.dir/build.make CMakeFiles/test_trajectory_actions.dir/test/test_trajectory_actions.cpp.i
+.PHONY : test/test_trajectory_actions.cpp.i
+
+test/test_trajectory_actions.s: test/test_trajectory_actions.cpp.s
+.PHONY : test/test_trajectory_actions.s
+
+# target to generate assembly for a file
+test/test_trajectory_actions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_actions.dir/build.make CMakeFiles/test_trajectory_actions.dir/test/test_trajectory_actions.cpp.s
+.PHONY : test/test_trajectory_actions.cpp.s
+
+test/test_trajectory_controller.o: test/test_trajectory_controller.cpp.o
+.PHONY : test/test_trajectory_controller.o
+
+# target to build an object file
+test/test_trajectory_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_controller.dir/build.make CMakeFiles/test_trajectory_controller.dir/test/test_trajectory_controller.cpp.o
+.PHONY : test/test_trajectory_controller.cpp.o
+
+test/test_trajectory_controller.i: test/test_trajectory_controller.cpp.i
+.PHONY : test/test_trajectory_controller.i
+
+# target to preprocess a source file
+test/test_trajectory_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_controller.dir/build.make CMakeFiles/test_trajectory_controller.dir/test/test_trajectory_controller.cpp.i
+.PHONY : test/test_trajectory_controller.cpp.i
+
+test/test_trajectory_controller.s: test/test_trajectory_controller.cpp.s
+.PHONY : test/test_trajectory_controller.s
+
+# target to generate assembly for a file
+test/test_trajectory_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_trajectory_controller.dir/build.make CMakeFiles/test_trajectory_controller.dir/test/test_trajectory_controller.cpp.s
+.PHONY : test/test_trajectory_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,14 +523,38 @@ help:
 	@echo "... test"
 	@echo "... joint_trajectory_controller_uninstall"
 	@echo "... uninstall"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... joint_trajectory_controller"
 	@echo "... joint_trajectory_controller_parameters"
+	@echo "... test_load_joint_trajectory_controller"
+	@echo "... test_tolerances"
+	@echo "... test_trajectory"
+	@echo "... test_trajectory_actions"
+	@echo "... test_trajectory_controller"
 	@echo "... src/joint_trajectory_controller.o"
 	@echo "... src/joint_trajectory_controller.i"
 	@echo "... src/joint_trajectory_controller.s"
 	@echo "... src/trajectory.o"
 	@echo "... src/trajectory.i"
 	@echo "... src/trajectory.s"
+	@echo "... test/test_load_joint_trajectory_controller.o"
+	@echo "... test/test_load_joint_trajectory_controller.i"
+	@echo "... test/test_load_joint_trajectory_controller.s"
+	@echo "... test/test_tolerances.o"
+	@echo "... test/test_tolerances.i"
+	@echo "... test/test_tolerances.s"
+	@echo "... test/test_trajectory.o"
+	@echo "... test/test_trajectory.i"
+	@echo "... test/test_trajectory.s"
+	@echo "... test/test_trajectory_actions.o"
+	@echo "... test/test_trajectory_actions.i"
+	@echo "... test/test_trajectory_actions.s"
+	@echo "... test/test_trajectory_controller.o"
+	@echo "... test/test_trajectory_controller.i"
+	@echo "... test/test_trajectory_controller.s"
 .PHONY : help
 
 

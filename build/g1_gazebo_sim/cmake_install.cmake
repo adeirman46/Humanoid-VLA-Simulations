@@ -1,8 +1,8 @@
-# Install script for directory: /home/irman/ROS2_Humanoid_VLA/g1_gazebo_sim
+# Install script for directory: /home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/g1_gazebo_sim")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/g1_gazebo_sim")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,13 +43,84 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/launch")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/worlds")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/models")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/g1_gazebo_sim")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/g1_gazebo_sim")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_index/share/ament_index/resource_index/packages/g1_gazebo_sim")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim/cmake" TYPE FILE FILES
+    "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_core/g1_gazebo_simConfig.cmake"
+    "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_core/g1_gazebo_simConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_gazebo_sim" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,6 +136,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

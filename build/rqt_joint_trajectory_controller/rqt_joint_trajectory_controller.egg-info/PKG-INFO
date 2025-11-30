@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: rqt_joint_trajectory_controller
+Version: 2.50.2
+Author: Noel Jimenez Garcia
+Author-email: noel.jimenez@pal-robotics.com
+Maintainer: Bence Magyar
+Maintainer-email: bence.magyar.robotics@gmail.com
+License: Apache License, Version 2.0
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist

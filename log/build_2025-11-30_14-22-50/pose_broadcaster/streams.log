@@ -1,0 +1,67 @@
+[0.052s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins PYTHONPATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib/python3.11/site-packages:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/irman/micromamba/envs/ros2_env/bin/cmake /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/pose_broadcaster -DCMAKE_INSTALL_PREFIX=/home/irman/Humanoid-VLA-Simulations/install/pose_broadcaster
+[0.642s] -- The CXX compiler identification is GNU 14.3.0
+[0.642s] -- Detecting CXX compiler ABI info
+[0.642s] -- Detecting CXX compiler ABI info - done
+[0.642s] -- Check for working CXX compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.642s] -- Detecting CXX compile features
+[0.642s] -- Detecting CXX compile features - done
+[0.642s] -- Found ament_cmake: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake/cmake)
+[1.093s] -- Found Python3: /home/irman/micromamba/envs/ros2_env/bin/python3 (found version "3.11.14") found components: Interpreter
+[1.183s] -- Found controller_interface: 2.52.2 (/home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake)
+[1.356s] -- Found rosidl_generator_c: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_c/cmake)
+[1.379s] -- Found rosidl_adapter: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_adapter/cmake)
+[1.414s] -- Found rosidl_generator_cpp: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_cpp/cmake)
+[1.455s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.514s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.031s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.278s] -- Checking for module 'yaml-0.1'
+[2.548s] --   Found yaml-0.1, version 0.2.5
+[3.041s] -- Found rmw_implementation_cmake: 6.1.2 (/home/irman/micromamba/envs/ros2_env/share/rmw_implementation_cmake/cmake)
+[3.054s] -- Found rmw_fastrtps_cpp: 6.2.7 (/home/irman/micromamba/envs/ros2_env/share/rmw_fastrtps_cpp/cmake)
+[3.157s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[3.854s] -- Found OpenSSL: /home/irman/micromamba/envs/ros2_env/lib/libcrypto.so (found version "3.5.4")
+[3.858s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[3.953s] -- Found FastRTPS: /home/irman/micromamba/envs/ros2_env/include
+[3.962s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[4.021s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[4.085s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.117s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.336s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.340s] -- Found Threads: TRUE
+[4.582s] -- Found generate_parameter_library: 0.5.0 (/home/irman/micromamba/envs/ros2_env/share/generate_parameter_library/cmake)
+[4.598s] -- Found parameter_traits: 0.5.0 (/home/irman/micromamba/envs/ros2_env/share/parameter_traits/cmake)
+[4.706s] -- Found realtime_tools: 2.14.0 (/home/irman/micromamba/envs/ros2_env/share/realtime_tools/cmake)
+[4.764s] -- Found tf2_msgs: 0.25.14 (/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake)
+[4.860s] -- Found ament_cmake_gmock: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gmock/cmake)
+[4.862s] -- Found controller_manager: 2.52.2 (/home/irman/Humanoid-VLA-Simulations/install/controller_manager/share/controller_manager/cmake)
+[4.912s] -- Found ros2_control_test_assets: 2.52.2 (/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[4.924s] -- Found gmock sources under '/home/irman/micromamba/envs/ros2_env/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.004s] -- The C compiler identification is GNU 14.3.0
+[5.021s] -- Detecting C compiler ABI info
+[5.171s] -- Detecting C compiler ABI info - done
+[5.205s] -- Check for working C compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-cc - skipped
+[5.206s] -- Detecting C compile features
+[5.206s] -- Detecting C compile features - done
+[5.220s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gmock_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[5.220s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[5.220s]   CMake.
+[5.220s] 
+[5.220s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[5.220s]   to tell CMake that the project requires at least <min> but has been updated
+[5.220s]   to work with policies introduced by <max> or earlier.
+[5.220s] 
+[5.220s] 
+[5.242s] -- Found ament_cmake_gtest: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gtest/cmake)
+[5.245s] -- Found gtest sources under '/home/irman/micromamba/envs/ros2_env/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.253s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[5.253s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[5.253s]   CMake.
+[5.253s] 
+[5.253s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[5.253s]   to tell CMake that the project requires at least <min> but has been updated
+[5.254s]   to work with policies introduced by <max> or earlier.
+[5.254s] 
+[5.254s] 
+[5.441s] -- Configuring done (5.4s)
+[5.531s] -- Generating done (0.1s)
+[5.545s] -- Build files have been written to: /home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster

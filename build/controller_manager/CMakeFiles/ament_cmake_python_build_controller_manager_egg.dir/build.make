@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/controller_manager
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/controller_manager
 
 # Utility rule file for ament_cmake_python_build_controller_manager_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/compiler_
 include CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_controller_manager_egg:
-	cd /home/irman/ROS2_Humanoid_VLA/build/controller_manager/ament_cmake_python/controller_manager && /home/irman/micromamba/envs/ros2_env/bin/python3 setup.py egg_info
+	cd /home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_python/controller_manager && /home/irman/micromamba/envs/ros2_env/bin/python3 setup.py egg_info
 
 CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/controller_manager && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager/CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/controller_manager && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager/CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_controller_manager_egg.dir/depend
 

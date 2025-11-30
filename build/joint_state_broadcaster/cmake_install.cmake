@@ -1,8 +1,8 @@
-# Install script for directory: /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_state_broadcaster
+# Install script for directory: /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_state_broadcaster
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/joint_state_broadcaster")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/joint_state_broadcaster")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,17 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/include/joint_state_broadcaster")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_state_broadcaster/joint_state_plugin.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/gmock/cmake_install.cmake")
+  include("/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/gmock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/gtest/cmake_install.cmake")
+  include("/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/gtest/cmake_install.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/joint_state_broadcaster" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_state_broadcaster/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,9 +71,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_state_broadcaster.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/libjoint_state_broadcaster.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/libjoint_state_broadcaster.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_state_broadcaster.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_state_broadcaster.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_state_broadcaster.so"
+         OLD_RPATH "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_state_broadcaster.so")
     endif()
@@ -76,10 +88,62 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/joint_state_broadcaster")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/joint_state_broadcaster")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_index/share/ament_index/resource_index/packages/joint_state_broadcaster")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/controller_interface__pluginlib__plugin" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/joint_state_broadcaster")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake/export_joint_state_broadcasterExport.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake/export_joint_state_broadcasterExport.cmake"
-         "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport.cmake")
+         "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake/export_joint_state_broadcasterExport-*.cmake")
       if(_cmake_old_config_files)
@@ -92,16 +156,35 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/CMakeFiles/Export/0170fa5db30242ed2a1abe2ed572eb79/export_joint_state_broadcasterExport-noconfig.cmake")
   endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster/cmake" TYPE FILE FILES
+    "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_core/joint_state_broadcasterConfig.cmake"
+    "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/ament_cmake_core/joint_state_broadcasterConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_broadcaster" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_state_broadcaster/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -117,6 +200,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/joint_state_broadcaster/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/joint_state_broadcaster/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

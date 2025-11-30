@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/imu_sensor_broadcaster/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/imu_sensor_broadcaster/gmock/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/imu_sensor_broadcaster/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

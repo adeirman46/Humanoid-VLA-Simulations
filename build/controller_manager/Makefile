@@ -57,10 +57,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/controller_manager
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/controller_manager
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/controller_manager/CMakeFiles /home/irman/ROS2_Humanoid_VLA/build/controller_manager//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/controller_manager/CMakeFiles /home/irman/Humanoid-VLA-Simulations/build/controller_manager//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/controller_manager/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/controller_manager/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -419,30 +419,30 @@ test_hardware_management_srvs/fast:
 .PHONY : test_hardware_management_srvs/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_controller_manager
+# Target rules for targets named ament_cmake_python_copy_controller_manager
 
 # Build rule for target.
-ament_cmake_python_symlink_controller_manager: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_controller_manager
-.PHONY : ament_cmake_python_symlink_controller_manager
+ament_cmake_python_copy_controller_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_controller_manager
+.PHONY : ament_cmake_python_copy_controller_manager
 
 # fast build rule for target.
-ament_cmake_python_symlink_controller_manager/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_controller_manager.dir/build.make CMakeFiles/ament_cmake_python_symlink_controller_manager.dir/build
-.PHONY : ament_cmake_python_symlink_controller_manager/fast
+ament_cmake_python_copy_controller_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_controller_manager.dir/build.make CMakeFiles/ament_cmake_python_copy_controller_manager.dir/build
+.PHONY : ament_cmake_python_copy_controller_manager/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_controller_manager_setup
+# Target rules for targets named ament_cmake_python_copy_controller_manager_setup
 
 # Build rule for target.
-ament_cmake_python_symlink_controller_manager_setup: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_controller_manager_setup
-.PHONY : ament_cmake_python_symlink_controller_manager_setup
+ament_cmake_python_copy_controller_manager_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_controller_manager_setup
+.PHONY : ament_cmake_python_copy_controller_manager_setup
 
 # fast build rule for target.
-ament_cmake_python_symlink_controller_manager_setup/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_controller_manager_setup.dir/build.make CMakeFiles/ament_cmake_python_symlink_controller_manager_setup.dir/build
-.PHONY : ament_cmake_python_symlink_controller_manager_setup/fast
+ament_cmake_python_copy_controller_manager_setup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_controller_manager_setup.dir/build.make CMakeFiles/ament_cmake_python_copy_controller_manager_setup.dir/build
+.PHONY : ament_cmake_python_copy_controller_manager_setup/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_controller_manager_egg
@@ -958,8 +958,8 @@ help:
 	@echo "... test"
 	@echo "... ament_cmake_python_build_controller_manager_egg"
 	@echo "... ament_cmake_python_build_controller_manager_scripts"
-	@echo "... ament_cmake_python_symlink_controller_manager"
-	@echo "... ament_cmake_python_symlink_controller_manager_setup"
+	@echo "... ament_cmake_python_copy_controller_manager"
+	@echo "... ament_cmake_python_copy_controller_manager_setup"
 	@echo "... ament_generate_version_header__controller_manager"
 	@echo "... controller_manager_uninstall"
 	@echo "... uninstall"

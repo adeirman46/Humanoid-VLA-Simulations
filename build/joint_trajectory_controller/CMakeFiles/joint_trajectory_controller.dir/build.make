@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller
 
 # Include any dependencies generated for this target.
 include CMakeFiles/joint_trajectory_controller.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/joint_trajectory_controller.dir/codegen:
 .PHONY : CMakeFiles/joint_trajectory_controller.dir/codegen
 
 CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o: CMakeFiles/joint_trajectory_controller.dir/flags.make
-CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o: /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp
+CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o: /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp
 CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o: CMakeFiles/joint_trajectory_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o -MF CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o.d -o CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o -c /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o"
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o -MF CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o.d -o CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o -c /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp
 
 CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.i"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp > CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.i
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp > CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.i
 
 CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.s"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp -o CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.s
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp -o CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.s
 
 CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o: CMakeFiles/joint_trajectory_controller.dir/flags.make
-CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o: /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp
+CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o: /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp
 CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o: CMakeFiles/joint_trajectory_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o -MF CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o.d -o CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o -c /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o"
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o -MF CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o.d -o CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o -c /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp
 
 CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.i"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp > CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.i
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp > CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.i
 
 CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.s"
-	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp -o CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.s
+	/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/src/trajectory.cpp -o CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.s
 
 # Object files for target joint_trajectory_controller
 joint_trajectory_controller_OBJECTS = \
@@ -116,134 +116,82 @@ libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libc
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblow_pass_filter.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librate_limiter.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libexponential_filter.so
+libjoint_trajectory_controller.so: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib/libcontroller_interface.so
+libjoint_trajectory_controller.so: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libfake_components.so
+libjoint_trajectory_controller.so: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libmock_components.so
+libjoint_trajectory_controller.so: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libhardware_interface.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librclcpp_lifecycle.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librealtime_tools.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libthread_priority.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontroller_interface.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libfake_components.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libmock_components.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libhardware_interface.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librclcpp_lifecycle.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_lifecycle.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcpputils.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcutils.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librclcpp_action.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_action.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librsl.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libmean.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libparams.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libincrement.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libmedian.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtransfer_function.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librclcpp_action.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_action.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librsl.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_py.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libmean.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libparams.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libincrement.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libmedian.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtransfer_function.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libclass_loader.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libconsole_bridge.so.1.0
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtinyxml2.so.11.0.0
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librclcpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblibstatistics_collector.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librmw_implementation.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libament_index_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_logging_spdlog.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_logging_interface.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libfmt.so.11.2.0
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_yaml_param_parser.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libyaml.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -253,35 +201,60 @@ libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libr
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_py.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_lifecycle.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_py.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_fastrtps_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_fastrtps_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libfastcdr.so.1.0.24
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librmw.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_introspection_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_introspection_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_cpp.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_py.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_py.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_generator_py.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_yaml_param_parser.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libyaml.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librmw_implementation.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librmw.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librosidl_runtime_c.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libament_index_cpp.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_logging_spdlog.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcpputils.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcl_logging_interface.so
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/librcutils.so
+libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libfmt.so.11.2.0
 libjoint_trajectory_controller.so: /home/irman/micromamba/envs/ros2_env/lib/libtracetools.so
 libjoint_trajectory_controller.so: CMakeFiles/joint_trajectory_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libjoint_trajectory_controller.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libjoint_trajectory_controller.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joint_trajectory_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -293,6 +266,6 @@ CMakeFiles/joint_trajectory_controller.dir/clean:
 .PHONY : CMakeFiles/joint_trajectory_controller.dir/clean
 
 CMakeFiles/joint_trajectory_controller.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles/joint_trajectory_controller.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles/joint_trajectory_controller.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/joint_trajectory_controller.dir/depend
 

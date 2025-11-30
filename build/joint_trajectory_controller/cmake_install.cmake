@@ -1,8 +1,8 @@
-# Install script for directory: /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller
+# Install script for directory: /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/joint_trajectory_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/joint_trajectory_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/include/joint_trajectory_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/joint_trajectory_plugin.xml")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/gmock/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/gtest/cmake_install.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/joint_trajectory_controller" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,9 +71,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_trajectory_controller.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/libjoint_trajectory_controller.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/libjoint_trajectory_controller.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_trajectory_controller.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_trajectory_controller.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_trajectory_controller.so"
+         OLD_RPATH "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libjoint_trajectory_controller.so")
     endif()
@@ -66,10 +88,62 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/joint_trajectory_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/joint_trajectory_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_index/share/ament_index/resource_index/packages/joint_trajectory_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/controller_interface__pluginlib__plugin" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/joint_trajectory_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake/export_joint_trajectory_controllerExport.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake/export_joint_trajectory_controllerExport.cmake"
-         "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport.cmake")
+         "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake/export_joint_trajectory_controllerExport-*.cmake")
       if(_cmake_old_config_files)
@@ -82,16 +156,35 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles/Export/c1586ece687c103d0ea2d8bfd330dd69/export_joint_trajectory_controllerExport-noconfig.cmake")
   endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller/cmake" TYPE FILE FILES
+    "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_core/joint_trajectory_controllerConfig.cmake"
+    "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_core/joint_trajectory_controllerConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_trajectory_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -107,6 +200,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

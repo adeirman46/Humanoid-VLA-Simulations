@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/irman/micromamba/envs/ros2_env/src/gmock_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/irman/ROS2_Humanoid_VLA/build/hardware_interface_testing")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/irman/Humanoid-VLA-Simulations/build/hardware_interface_testing")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

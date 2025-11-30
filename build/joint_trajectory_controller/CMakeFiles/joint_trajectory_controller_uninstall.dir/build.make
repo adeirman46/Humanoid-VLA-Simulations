@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller
 
 # Utility rule file for joint_trajectory_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/joint_trajectory_controller_uninstall.dir/compiler_depend.mak
 include CMakeFiles/joint_trajectory_controller_uninstall.dir/progress.make
 
 CMakeFiles/joint_trajectory_controller_uninstall:
-	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/joint_trajectory_controller_uninstall.dir/codegen:
 .PHONY : CMakeFiles/joint_trajectory_controller_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/joint_trajectory_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/joint_trajectory_controller_uninstall.dir/clean
 
 CMakeFiles/joint_trajectory_controller_uninstall.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/src/ros2_controllers/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller /home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/CMakeFiles/joint_trajectory_controller_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller /home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/CMakeFiles/joint_trajectory_controller_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/joint_trajectory_controller_uninstall.dir/depend
 

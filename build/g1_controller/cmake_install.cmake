@@ -1,8 +1,8 @@
-# Install script for directory: /home/irman/ROS2_Humanoid_VLA/g1_controller
+# Install script for directory: /home/irman/Humanoid-VLA-Simulations/src/g1_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/g1_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/g1_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,19 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/irman/ROS2_Humanoid_VLA/build/g1_controller/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/pythonpath.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/pythonpath.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/g1_controller-0.1.0-py3.11.egg-info" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_python/g1_controller/g1_controller.egg-info/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/g1_controller" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/g1_controller/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,10 +66,87 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       )
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/g1_controller" TYPE PROGRAM FILES
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/stand_controller.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/zero_pose_controller.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/gui_controller.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/ros2_control_gui.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/wasd_controller.py"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/config")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/launch")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/g1_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/g1_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_index/share/ament_index/resource_index/packages/g1_controller")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller/cmake" TYPE FILE FILES
+    "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_core/g1_controllerConfig.cmake"
+    "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_core/g1_controllerConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/g1_controller" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/package.xml")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/g1_controller/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -73,6 +162,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/g1_controller/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/g1_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

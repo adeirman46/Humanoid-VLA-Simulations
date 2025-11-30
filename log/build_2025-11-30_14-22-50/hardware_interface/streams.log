@@ -1,0 +1,178 @@
+[0.008s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake /home/irman/Humanoid-VLA-Simulations/src/ros2_control/hardware_interface -DCMAKE_INSTALL_PREFIX=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface
+[0.159s] -- The CXX compiler identification is GNU 14.3.0
+[0.170s] -- Detecting CXX compiler ABI info
+[0.309s] -- Detecting CXX compiler ABI info - done
+[0.319s] -- Check for working CXX compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.319s] -- Detecting CXX compile features
+[0.320s] -- Detecting CXX compile features - done
+[0.347s] -- Found ament_cmake: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake/cmake)
+[0.485s] -- Found Python3: /home/irman/micromamba/envs/ros2_env/bin/python3 (found version "3.11.14") found components: Interpreter
+[0.652s] -- Found control_msgs: 4.8.0 (/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake)
+[0.744s] -- Found rosidl_generator_c: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_c/cmake)
+[0.762s] -- Found rosidl_adapter: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_adapter/cmake)
+[0.784s] -- Found rosidl_generator_cpp: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_cpp/cmake)
+[0.811s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.844s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.094s] -- Found lifecycle_msgs: 1.2.1 (/home/irman/micromamba/envs/ros2_env/share/lifecycle_msgs/cmake)
+[1.115s] -- Found pluginlib: 5.1.0 (/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake)
+[1.146s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[1.152s] -- Found rclcpp_lifecycle: 16.0.13 (/home/irman/micromamba/envs/ros2_env/share/rclcpp_lifecycle/cmake)
+[1.261s] -- Checking for module 'yaml-0.1'
+[1.387s] --   Found yaml-0.1, version 0.2.5
+[1.791s] -- Found rmw_implementation_cmake: 6.1.2 (/home/irman/micromamba/envs/ros2_env/share/rmw_implementation_cmake/cmake)
+[1.791s] -- Found rmw_fastrtps_cpp: 6.2.7 (/home/irman/micromamba/envs/ros2_env/share/rmw_fastrtps_cpp/cmake)
+[1.845s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.333s] -- Found OpenSSL: /home/irman/micromamba/envs/ros2_env/lib/libcrypto.so (found version "3.5.4")
+[2.337s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.385s] -- Found FastRTPS: /home/irman/micromamba/envs/ros2_env/include
+[2.391s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.421s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.456s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.474s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.592s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.594s] -- Found Threads: TRUE
+[2.710s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.726s] -- Found ament_cmake_gmock: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gmock/cmake)
+[2.728s] -- Found ros2_control_test_assets: 2.52.2 (/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake)
+[2.737s] -- Found gmock sources under '/home/irman/micromamba/envs/ros2_env/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.811s] -- The C compiler identification is GNU 14.3.0
+[2.823s] -- Detecting C compiler ABI info
+[2.930s] -- Detecting C compiler ABI info - done
+[2.954s] -- Check for working C compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-cc - skipped
+[2.954s] -- Detecting C compile features
+[2.955s] -- Detecting C compile features - done
+[2.965s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gmock_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[2.965s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[2.965s]   CMake.
+[2.966s] 
+[2.966s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[2.966s]   to tell CMake that the project requires at least <min> but has been updated
+[2.966s]   to work with policies introduced by <max> or earlier.
+[2.966s] 
+[2.966s] 
+[2.979s] -- Found ament_cmake_gtest: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gtest/cmake)
+[2.980s] -- Found gtest sources under '/home/irman/micromamba/envs/ros2_env/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.986s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[2.986s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[2.986s]   CMake.
+[2.986s] 
+[2.986s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[2.986s]   to tell CMake that the project requires at least <min> but has been updated
+[2.986s]   to work with policies introduced by <max> or earlier.
+[2.986s] 
+[2.986s] 
+[3.093s] -- Configuring done (3.1s)
+[3.185s] -- Generating done (0.1s)
+[3.207s] -- Build files have been written to: /home/irman/Humanoid-VLA-Simulations/build/hardware_interface
+[3.234s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake /home/irman/Humanoid-VLA-Simulations/src/ros2_control/hardware_interface -DCMAKE_INSTALL_PREFIX=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface
+[3.236s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake --build /home/irman/Humanoid-VLA-Simulations/build/hardware_interface -- -j16 -l16
+[3.287s] [  8%] Building CXX object gmock/CMakeFiles/gmock.dir/home/irman/micromamba/envs/ros2_env/src/gtest_vendor/src/gtest-all.cc.o
+[3.287s] [  8%] Building CXX object CMakeFiles/mock_components.dir/src/mock_components/generic_system.cpp.o
+[3.287s] [  8%] Generating hardware_interface/version.h
+[3.288s] [ 17%] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[3.288s] [ 17%] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[3.288s] [ 17%] Building CXX object CMakeFiles/fake_components.dir/src/mock_components/generic_system.cpp.o
+[3.288s] [ 20%] Building CXX object CMakeFiles/fake_components.dir/src/mock_components/fake_generic_system.cpp.o
+[3.309s] [ 20%] Built target ament_generate_version_header__hardware_interface
+[3.339s] [ 28%] Building CXX object CMakeFiles/hardware_interface.dir/src/resource_manager.cpp.o
+[3.339s] [ 28%] Building CXX object CMakeFiles/hardware_interface.dir/src/system.cpp.o
+[3.339s] [ 28%] Building CXX object CMakeFiles/hardware_interface.dir/src/component_parser.cpp.o
+[3.339s] [ 31%] Building CXX object CMakeFiles/hardware_interface.dir/src/actuator.cpp.o
+[3.344s] [ 34%] Building CXX object CMakeFiles/hardware_interface.dir/src/sensor.cpp.o
+[3.348s] [ 37%] Building CXX object CMakeFiles/hardware_interface.dir/src/lexical_casts.cpp.o
+[5.336s] [ 40%] Linking CXX static library libgmock_main.a
+[5.392s] [ 40%] Built target gmock_main
+[9.964s] [ 42%] Linking CXX shared library libfake_components.so
+[10.208s] [ 45%] Linking CXX shared library libmock_components.so
+[10.278s] [ 45%] Built target fake_components
+[10.472s] [ 45%] Built target mock_components
+[16.463s] [ 48%] Linking CXX static library libgmock.a
+[16.512s] [ 48%] Built target gmock
+[16.533s] [ 51%] Building CXX object CMakeFiles/test_macros.dir/test/test_macros.cpp.o
+[18.353s] [ 54%] Linking CXX executable test_macros
+[18.506s] [ 54%] Built target test_macros
+[21.670s] [ 57%] Linking CXX shared library libhardware_interface.so
+[21.831s] [ 57%] Built target hardware_interface
+[21.850s] [ 68%] Building CXX object CMakeFiles/test_component_interfaces.dir/test/test_component_interfaces.cpp.o
+[21.850s] [ 68%] Building CXX object CMakeFiles/test_inst_hardwares.dir/test/test_inst_hardwares.cpp.o
+[21.850s] [ 68%] Building CXX object CMakeFiles/test_joint_handle.dir/test/test_handle.cpp.o
+[21.850s] [ 68%] Building CXX object CMakeFiles/test_component_parser.dir/test/test_component_parser.cpp.o
+[21.850s] [ 77%] Building CXX object CMakeFiles/test_hardware_components.dir/test/test_hardware_components/test_system_with_command_modes.cpp.o
+[21.850s] [ 77%] Building CXX object CMakeFiles/test_hardware_components.dir/test/test_hardware_components/test_force_torque_sensor.cpp.o
+[21.851s] [ 77%] Building CXX object CMakeFiles/test_generic_system.dir/test/mock_components/test_generic_system.cpp.o
+[21.851s] [ 82%] Building CXX object CMakeFiles/test_hardware_components.dir/test/test_hardware_components/test_two_joint_system.cpp.o
+[21.851s] [ 82%] Building CXX object CMakeFiles/test_hardware_components.dir/test/test_hardware_components/test_single_joint_actuator.cpp.o
+[24.147s] [ 85%] Linking CXX executable test_inst_hardwares
+[24.496s] [ 85%] Built target test_inst_hardwares
+[24.997s] [ 88%] Linking CXX executable test_joint_handle
+[25.187s] [ 91%] Linking CXX shared library libtest_hardware_components.so
+[25.260s] [ 91%] Built target test_joint_handle
+[25.378s] [ 91%] Built target test_hardware_components
+[28.882s] [ 94%] Linking CXX executable test_component_interfaces
+[29.099s] [ 94%] Built target test_component_interfaces
+[31.397s] [ 97%] Linking CXX executable test_component_parser
+[31.556s] [ 97%] Built target test_component_parser
+[33.589s] [100%] Linking CXX executable test_generic_system
+[33.742s] [100%] Built target test_generic_system
+[33.752s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake --build /home/irman/Humanoid-VLA-Simulations/build/hardware_interface -- -j16 -l16
+[33.753s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake --install /home/irman/Humanoid-VLA-Simulations/build/hardware_interface
+[33.759s] -- Install configuration: ""
+[33.760s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/mock_components_plugin_description.xml
+[33.760s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/fake_components_plugin_description.xml
+[33.760s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libtest_hardware_components.so
+[33.760s] -- Set non-toolchain portion of runtime path of "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libtest_hardware_components.so" to ""
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/test/test_hardware_components/test_hardware_components.xml
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/resource_manager.hpp
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/component_parser.hpp
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/hardware_info.hpp
+[33.761s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/visibility_control.h
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/actuator.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/system.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/types
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/types/lifecycle_state_names.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/types/hardware_interface_type_values.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/types/hardware_interface_return_values.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/system_interface.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/controller_info.hpp
+[33.762s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/lexical_casts.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/sensor.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/hardware_component_info.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/actuator_interface.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/loaned_state_interface.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/macros.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/sensor_interface.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/handle.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/loaned_command_interface.hpp
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/mock_components
+[33.763s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/mock_components/visibility_control.h
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/mock_components/generic_system.hpp
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/fake_components
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/fake_components/visibility_control.h
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/fake_components/generic_system.hpp
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libfake_components.so
+[33.764s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libmock_components.so
+[33.765s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libhardware_interface.so
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/ament_index/resource_index/package_run_dependencies/hardware_interface
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/ament_index/resource_index/parent_prefix_path/hardware_interface
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/environment/ament_prefix_path.sh
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/environment/ament_prefix_path.dsv
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/environment/path.sh
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/environment/path.dsv
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/local_setup.bash
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/local_setup.sh
+[33.766s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/local_setup.zsh
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/local_setup.dsv
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/package.dsv
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/ament_index/resource_index/packages/hardware_interface
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_interface
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/export_hardware_interfaceExport.cmake
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/export_hardware_interfaceExport-noconfig.cmake
+[33.767s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/ament_cmake_export_targets-extras.cmake
+[33.768s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.768s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/hardware_interfaceConfig.cmake
+[33.768s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/hardware_interfaceConfig-version.cmake
+[33.768s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/package.xml
+[33.768s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface/hardware_interface/version.h
+[33.771s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /home/irman/micromamba/envs/ros2_env/bin/cmake --install /home/irman/Humanoid-VLA-Simulations/build/hardware_interface

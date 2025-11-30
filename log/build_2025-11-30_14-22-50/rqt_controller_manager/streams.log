@@ -1,0 +1,48 @@
+[1.851s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/src/ros2_control/rqt_controller_manager': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins PYTHONPATH=/home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/prefix_override:/home/irman/micromamba/envs/ros2_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages:/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib/python3.11/site-packages:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/irman/micromamba/envs/ros2_env/bin/python3.11 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/rqt_controller_manager build --build-base /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build install --record /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/install.log --single-version-externally-managed install_data
+[2.175s] /home/irman/micromamba/envs/ros2_env/lib/python3.11/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.175s]   warnings.warn(msg)
+[2.304s] running egg_info
+[2.326s] creating ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info
+[2.327s] writing ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/PKG-INFO
+[2.328s] writing dependency_links to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/dependency_links.txt
+[2.329s] writing entry points to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/entry_points.txt
+[2.329s] writing requirements to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/requires.txt
+[2.330s] writing top-level names to ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/top_level.txt
+[2.332s] writing manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[2.380s] reading manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[2.382s] writing manifest file '../../../build/rqt_controller_manager/rqt_controller_manager.egg-info/SOURCES.txt'
+[2.382s] running build
+[2.382s] running build_py
+[2.383s] creating /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[2.383s] copying rqt_controller_manager/controller_manager.py -> /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[2.385s] copying rqt_controller_manager/update_combo.py -> /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[2.386s] copying rqt_controller_manager/main.py -> /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[2.387s] copying rqt_controller_manager/__init__.py -> /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager
+[2.388s] running install
+[2.396s] running install_lib
+[2.419s] creating /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager
+[2.420s] copying /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager/controller_manager.py -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager
+[2.422s] copying /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager/update_combo.py -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager
+[2.422s] copying /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager/main.py -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager
+[2.422s] copying /home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/build/lib/rqt_controller_manager/__init__.py -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager
+[2.423s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager/controller_manager.py to controller_manager.cpython-311.pyc
+[2.430s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager/update_combo.py to update_combo.cpython-311.pyc
+[2.430s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager/main.py to main.cpython-311.pyc
+[2.430s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager/__init__.py to __init__.cpython-311.pyc
+[2.431s] running install_data
+[2.431s] creating /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/ament_index/resource_index/packages
+[2.432s] copying resource/rqt_controller_manager -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/ament_index/resource_index/packages
+[2.432s] copying package.xml -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager
+[2.434s] creating /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.434s] copying resource/cm_icon.png -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.434s] copying resource/controller_manager.ui -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.435s] copying resource/popup_info.ui -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.436s] copying resource/led_red.png -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.436s] copying resource/led_off.png -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.436s] copying resource/led_green.png -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager/resource
+[2.437s] copying plugin.xml -> /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/share/rqt_controller_manager
+[2.437s] running install_egg_info
+[2.461s] Copying ../../../build/rqt_controller_manager/rqt_controller_manager.egg-info to /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/python3.11/site-packages/rqt_controller_manager-2.52.2-py3.11.egg-info
+[2.463s] running install_scripts
+[2.511s] Installing rqt_controller_manager script to /home/irman/Humanoid-VLA-Simulations/install/rqt_controller_manager/lib/rqt_controller_manager
+[2.512s] writing list of installed files to '/home/irman/Humanoid-VLA-Simulations/build/rqt_controller_manager/install.log'

@@ -1,7 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/irman/ROS2_Humanoid_VLA/build/joint_trajectory_controller/cmake_install.cmake"
+		"/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/gmock/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/joint_trajectory_controller/gtest/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

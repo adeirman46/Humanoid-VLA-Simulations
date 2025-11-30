@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/g1_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/g1_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/g1_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/g1_controller
 
 # Utility rule file for ament_cmake_python_build_g1_controller_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/compiler_depen
 include CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_g1_controller_egg:
-	cd /home/irman/ROS2_Humanoid_VLA/build/g1_controller/ament_cmake_python/g1_controller && /home/irman/micromamba/envs/ros2_env/bin/python3 setup.py egg_info
+	cd /home/irman/Humanoid-VLA-Simulations/build/g1_controller/ament_cmake_python/g1_controller && /home/irman/micromamba/envs/ros2_env/bin/python3 setup.py egg_info
 
 CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/g1_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/g1_controller /home/irman/ROS2_Humanoid_VLA/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/g1_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/g1_controller /home/irman/Humanoid-VLA-Simulations/src/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/depend
 

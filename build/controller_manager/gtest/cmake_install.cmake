@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/controller_manager")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/controller_manager")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,6 +45,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/controller_manager/gtest/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/controller_manager/gtest/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/controller_manager
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/controller_manager
 
 # Utility rule file for controller_manager_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/controller_manager_uninstall.dir/compiler_depend.make
 include CMakeFiles/controller_manager_uninstall.dir/progress.make
 
 CMakeFiles/controller_manager_uninstall:
-	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/ROS2_Humanoid_VLA/build/controller_manager/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/controller_manager_uninstall.dir/codegen:
 .PHONY : CMakeFiles/controller_manager_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/controller_manager_uninstall.dir/clean:
 .PHONY : CMakeFiles/controller_manager_uninstall.dir/clean
 
 CMakeFiles/controller_manager_uninstall.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/controller_manager && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager /home/irman/ROS2_Humanoid_VLA/src/ros2_control/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager /home/irman/ROS2_Humanoid_VLA/build/controller_manager/CMakeFiles/controller_manager_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/controller_manager && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager /home/irman/Humanoid-VLA-Simulations/build/controller_manager/CMakeFiles/controller_manager_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/controller_manager_uninstall.dir/depend
 

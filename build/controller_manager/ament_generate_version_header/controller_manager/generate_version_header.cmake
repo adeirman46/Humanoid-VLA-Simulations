@@ -14,7 +14,7 @@
 # Generated from generate_version_header.cmake.in
 # This file is used by ament_generate_version_header()
 
-set(GENERATED_HEADER_FILE "/home/irman/ROS2_Humanoid_VLA/build/controller_manager/ament_generate_version_header/controller_manager/controller_manager/version.h")
+set(GENERATED_HEADER_FILE "/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_generate_version_header/controller_manager/controller_manager/version.h")
 set(VERSION_TEMPLATE_FILE "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gen_version_h/cmake/version.h.in")
 
 set(VERSION_MAJOR "2")

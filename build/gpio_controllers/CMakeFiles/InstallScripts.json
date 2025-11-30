@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/gpio_controllers/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/gpio_controllers/gmock/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/gpio_controllers/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

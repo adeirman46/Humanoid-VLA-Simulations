@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/controller_manager_msgs/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/controller_manager_msgs/controller_manager_msgs__py/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

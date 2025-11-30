@@ -57,10 +57,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_control/hardware_interface_testing
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_control/hardware_interface_testing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/hardware_interface_testing
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/hardware_interface_testing
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/hardware_interface_testing/CMakeFiles /home/irman/ROS2_Humanoid_VLA/build/hardware_interface_testing//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/hardware_interface_testing/CMakeFiles /home/irman/Humanoid-VLA-Simulations/build/hardware_interface_testing//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/hardware_interface_testing/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/hardware_interface_testing/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

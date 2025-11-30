@@ -1,1 +1,1 @@
-/home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/g1_gazebo_sim
+g1_package;gazebo_ros_pkgs;gazebo_ros;gazebo_plugins;robot_state_publisher;joint_state_publisher;xacro;rviz2;launch_ros;launch;ament_lint_auto;ament_lint_common

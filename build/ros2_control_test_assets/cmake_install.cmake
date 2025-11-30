@@ -1,8 +1,8 @@
-# Install script for directory: /home/irman/ROS2_Humanoid_VLA/src/ros2_control/ros2_control_test_assets
+# Install script for directory: /home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irman/ROS2_Humanoid_VLA/install/ros2_control_test_assets")
+  set(CMAKE_INSTALL_PREFIX "/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,14 +43,66 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/urdf" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets/urdf/test_hardware_components.urdf")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets/include/")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ros2_control_test_assets")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ros2_control_test_assets")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/environment" TYPE FILE FILES "/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/environment" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_index/share/ament_index/resource_index/packages/ros2_control_test_assets")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake/export_ros2_control_test_assetsExport.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake/export_ros2_control_test_assetsExport.cmake"
-         "/home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/CMakeFiles/Export/585b514747fa642dd07a54dcbf86a073/export_ros2_control_test_assetsExport.cmake")
+         "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/CMakeFiles/Export/585b514747fa642dd07a54dcbf86a073/export_ros2_control_test_assetsExport.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake/export_ros2_control_test_assetsExport-*.cmake")
       if(_cmake_old_config_files)
@@ -63,13 +115,28 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake" TYPE FILE FILES "/home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/CMakeFiles/Export/585b514747fa642dd07a54dcbf86a073/export_ros2_control_test_assetsExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/CMakeFiles/Export/585b514747fa642dd07a54dcbf86a073/export_ros2_control_test_assetsExport.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets/cmake" TYPE FILE FILES
+    "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_core/ros2_control_test_assetsConfig.cmake"
+    "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/ament_cmake_core/ros2_control_test_assetsConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros2_control_test_assets" TYPE FILE FILES "/home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets/package.xml")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/install_local_manifest.txt"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -85,6 +152,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

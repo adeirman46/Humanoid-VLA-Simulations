@@ -54,10 +54,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/g1_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/g1_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/g1_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/g1_controller
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -77,7 +77,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/g1_controller_uninstall.dir/clean
-clean: CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/clean
+clean: CMakeFiles/ament_cmake_python_copy_g1_controller.dir/clean
 clean: CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/clean
 .PHONY : clean
 
@@ -88,14 +88,14 @@ clean: CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/g1_controller_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -105,7 +105,7 @@ uninstall: CMakeFiles/uninstall.dir/rule
 # codegen rule for target.
 CMakeFiles/uninstall.dir/codegen: CMakeFiles/g1_controller_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/codegen
 
 # clean rule for target.
@@ -120,14 +120,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/g1_controller_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/g1_controller_uninstall.dir/build.make CMakeFiles/g1_controller_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/g1_controller_uninstall.dir/build.make CMakeFiles/g1_controller_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Built target g1_controller_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Built target g1_controller_uninstall"
 .PHONY : CMakeFiles/g1_controller_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/g1_controller_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/g1_controller_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 .PHONY : CMakeFiles/g1_controller_uninstall.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ g1_controller_uninstall: CMakeFiles/g1_controller_uninstall.dir/rule
 # codegen rule for target.
 CMakeFiles/g1_controller_uninstall.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/g1_controller_uninstall.dir/build.make CMakeFiles/g1_controller_uninstall.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target g1_controller_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target g1_controller_uninstall"
 .PHONY : CMakeFiles/g1_controller_uninstall.dir/codegen
 
 # clean rule for target.
@@ -146,52 +146,52 @@ CMakeFiles/g1_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/g1_controller_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ament_cmake_python_symlink_g1_controller.dir
+# Target rules for target CMakeFiles/ament_cmake_python_copy_g1_controller.dir
 
 # All Build rule for target.
-CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Built target ament_cmake_python_symlink_g1_controller"
-.PHONY : CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/all
+CMakeFiles/ament_cmake_python_copy_g1_controller.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_copy_g1_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Built target ament_cmake_python_copy_g1_controller"
+.PHONY : CMakeFiles/ament_cmake_python_copy_g1_controller.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
-.PHONY : CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/rule
+CMakeFiles/ament_cmake_python_copy_g1_controller.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_copy_g1_controller.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_copy_g1_controller.dir/rule
 
 # Convenience name for target.
-ament_cmake_python_symlink_g1_controller: CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/rule
-.PHONY : ament_cmake_python_symlink_g1_controller
+ament_cmake_python_copy_g1_controller: CMakeFiles/ament_cmake_python_copy_g1_controller.dir/rule
+.PHONY : ament_cmake_python_copy_g1_controller
 
 # codegen rule for target.
-CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target ament_cmake_python_symlink_g1_controller"
-.PHONY : CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/codegen
+CMakeFiles/ament_cmake_python_copy_g1_controller.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_copy_g1_controller.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target ament_cmake_python_copy_g1_controller"
+.PHONY : CMakeFiles/ament_cmake_python_copy_g1_controller.dir/codegen
 
 # clean rule for target.
-CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/clean
-.PHONY : CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/clean
+CMakeFiles/ament_cmake_python_copy_g1_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_copy_g1_controller.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_copy_g1_controller.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir
 
 # All Build rule for target.
-CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/all: CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/all
+CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/all: CMakeFiles/ament_cmake_python_copy_g1_controller.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/build.make CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/build.make CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Built target ament_cmake_python_build_g1_controller_egg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Built target ament_cmake_python_build_g1_controller_egg"
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/rule
 
 # Convenience name for target.
@@ -199,9 +199,9 @@ ament_cmake_python_build_g1_controller_egg: CMakeFiles/ament_cmake_python_build_
 .PHONY : ament_cmake_python_build_g1_controller_egg
 
 # codegen rule for target.
-CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen: CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/all
+CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen: CMakeFiles/ament_cmake_python_copy_g1_controller.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/build.make CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target ament_cmake_python_build_g1_controller_egg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles --progress-num= "Finished codegen for target ament_cmake_python_build_g1_controller_egg"
 .PHONY : CMakeFiles/ament_cmake_python_build_g1_controller_egg.dir/codegen
 
 # clean rule for target.

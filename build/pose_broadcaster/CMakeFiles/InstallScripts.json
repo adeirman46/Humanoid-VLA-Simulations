@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster/gmock/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/g1_gazebo_sim
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim
 
 # Utility rule file for g1_gazebo_sim_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/g1_gazebo_sim_uninstall.dir/compiler_depend.make
 include CMakeFiles/g1_gazebo_sim_uninstall.dir/progress.make
 
 CMakeFiles/g1_gazebo_sim_uninstall:
-	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/home/irman/micromamba/envs/ros2_env/bin/cmake -P /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 CMakeFiles/g1_gazebo_sim_uninstall.dir/codegen:
 .PHONY : CMakeFiles/g1_gazebo_sim_uninstall.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/g1_gazebo_sim_uninstall.dir/clean:
 .PHONY : CMakeFiles/g1_gazebo_sim_uninstall.dir/clean
 
 CMakeFiles/g1_gazebo_sim_uninstall.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/g1_gazebo_sim /home/irman/ROS2_Humanoid_VLA/g1_gazebo_sim /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim /home/irman/ROS2_Humanoid_VLA/build/g1_gazebo_sim/CMakeFiles/g1_gazebo_sim_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim /home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim /home/irman/Humanoid-VLA-Simulations/build/g1_gazebo_sim/CMakeFiles/g1_gazebo_sim_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/g1_gazebo_sim_uninstall.dir/depend
 

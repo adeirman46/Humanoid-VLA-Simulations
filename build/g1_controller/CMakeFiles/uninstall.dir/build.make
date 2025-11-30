@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/g1_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/g1_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/g1_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/g1_controller
 
 # Utility rule file for uninstall.
 
@@ -81,6 +81,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/g1_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/g1_controller /home/irman/ROS2_Humanoid_VLA/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/g1_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/g1_controller /home/irman/Humanoid-VLA-Simulations/src/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

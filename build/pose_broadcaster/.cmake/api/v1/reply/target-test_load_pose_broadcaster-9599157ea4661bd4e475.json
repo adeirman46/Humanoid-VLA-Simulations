@@ -1,0 +1,2510 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "test_load_pose_broadcaster"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_ament_add_gmock",
+			"ament_add_gmock",
+			"target_link_libraries",
+			"ament_target_dependencies",
+			"generate_parameter_library",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"set_property",
+			"_pkg_create_imp_target",
+			"_pkg_recalculate",
+			"_pkg_check_modules_internal",
+			"pkg_check_modules",
+			"add_compile_options",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake",
+			"CMakeLists.txt",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake",
+			"/home/irman/micromamba/envs/ros2_env/src/gmock_vendor/CMakeLists.txt",
+			"/home/irman/micromamba/envs/ros2_env/share/generate_parameter_library/cmake/generate_parameter_library.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_lifecycle/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_lifecycle/cmake/rclcpp_lifecycleConfig.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/hardware_interfaceConfig.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/controller_interfaceConfig.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/export_hardware_interfaceExport.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/export_control_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/control_msgsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/export_control_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/export_control_msgs__rosidl_generator_pyExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/export_control_msgs__rosidl_generator_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/export_pluginlibExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/pluginlibConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/class_loader/cmake/class_loaderExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/class_loader/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/class_loader/cmake/class_loaderConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/realtime_tools/cmake/export_realtime_toolsExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/realtime_tools/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/realtime_tools/cmake/realtime_toolsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp/cmake/rclcppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp/cmake/rclcppConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_lifecycle/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_action/cmake/rclcpp_actionExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_action/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp_action/cmake/rclcpp_actionConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/cmake-4.1/Modules/FindPkgConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/libyaml_vendor/cmake/Modules/Findyaml.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/libyaml_vendor/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/libyaml_vendor/cmake/libyaml_vendorConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl_yaml_param_parser/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl/cmake/rclConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl/cmake/rclExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcl/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/export_tf2_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/tf2_msgsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/tf2_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/export_tf2_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/tf2_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/tf2_msgs__rosidl_typesupport_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/export_tf2_msgs__rosidl_generator_pyExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/tf2_msgs__rosidl_typesupport_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/tf2_msgs/cmake/export_tf2_msgs__rosidl_generator_cExport.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/controller_manager/share/controller_manager/cmake/export_controller_managerExport.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/controller_manager/share/controller_manager/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/Humanoid-VLA-Simulations/install/controller_manager/share/controller_manager/cmake/controller_managerConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/geometry_msgsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/control_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_introspection_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_generator_pyExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/geometry_msgs/cmake/export_geometry_msgs__rosidl_generator_cExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cppExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rosidl_typesupport_cpp/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cppConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/action_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/action_msgs/cmake/action_msgsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcutils/cmake/rcutilsExport.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 145,
+				"parent" : 7
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 25,
+				"parent" : 9
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 92,
+				"parent" : 11
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 145,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"file" : 11,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 41,
+				"parent" : 16
+			},
+			{
+				"file" : 10,
+				"parent" : 17
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 21,
+				"parent" : 18
+			},
+			{
+				"file" : 9,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 41,
+				"parent" : 20
+			},
+			{
+				"file" : 8,
+				"parent" : 21
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 22
+			},
+			{
+				"file" : 7,
+				"parent" : 23
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 6,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 9,
+				"parent" : 26
+			},
+			{
+				"file" : 5,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 61,
+				"parent" : 28
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 41,
+				"parent" : 20
+			},
+			{
+				"file" : 13,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 13,
+				"line" : 9,
+				"parent" : 31
+			},
+			{
+				"file" : 12,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 12,
+				"line" : 61,
+				"parent" : 33
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 22
+			},
+			{
+				"file" : 16,
+				"parent" : 35
+			},
+			{
+				"command" : 7,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 36
+			},
+			{
+				"file" : 15,
+				"parent" : 37
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 14,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 14,
+				"line" : 61,
+				"parent" : 40
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 17,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 17,
+				"line" : 61,
+				"parent" : 43
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 18,
+				"parent" : 45
+			},
+			{
+				"command" : 6,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 46
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 19,
+				"parent" : 48
+			},
+			{
+				"command" : 6,
+				"file" : 19,
+				"line" : 61,
+				"parent" : 49
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 20,
+				"parent" : 51
+			},
+			{
+				"command" : 6,
+				"file" : 20,
+				"line" : 61,
+				"parent" : 52
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 21,
+				"parent" : 54
+			},
+			{
+				"command" : 6,
+				"file" : 21,
+				"line" : 61,
+				"parent" : 55
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 22,
+				"parent" : 57
+			},
+			{
+				"command" : 6,
+				"file" : 22,
+				"line" : 61,
+				"parent" : 58
+			},
+			{
+				"command" : 7,
+				"file" : 15,
+				"line" : 9,
+				"parent" : 38
+			},
+			{
+				"file" : 23,
+				"parent" : 60
+			},
+			{
+				"command" : 6,
+				"file" : 23,
+				"line" : 61,
+				"parent" : 61
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 22
+			},
+			{
+				"file" : 26,
+				"parent" : 63
+			},
+			{
+				"command" : 7,
+				"file" : 26,
+				"line" : 41,
+				"parent" : 64
+			},
+			{
+				"file" : 25,
+				"parent" : 65
+			},
+			{
+				"command" : 7,
+				"file" : 25,
+				"line" : 9,
+				"parent" : 66
+			},
+			{
+				"file" : 24,
+				"parent" : 67
+			},
+			{
+				"command" : 6,
+				"file" : 24,
+				"line" : 61,
+				"parent" : 68
+			},
+			{
+				"command" : 7,
+				"file" : 26,
+				"line" : 41,
+				"parent" : 64
+			},
+			{
+				"file" : 30,
+				"parent" : 70
+			},
+			{
+				"command" : 8,
+				"file" : 30,
+				"line" : 21,
+				"parent" : 71
+			},
+			{
+				"file" : 29,
+				"parent" : 72
+			},
+			{
+				"command" : 7,
+				"file" : 29,
+				"line" : 41,
+				"parent" : 73
+			},
+			{
+				"file" : 28,
+				"parent" : 74
+			},
+			{
+				"command" : 7,
+				"file" : 28,
+				"line" : 9,
+				"parent" : 75
+			},
+			{
+				"file" : 27,
+				"parent" : 76
+			},
+			{
+				"command" : 6,
+				"file" : 27,
+				"line" : 61,
+				"parent" : 77
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"file" : 33,
+				"parent" : 79
+			},
+			{
+				"command" : 7,
+				"file" : 33,
+				"line" : 41,
+				"parent" : 80
+			},
+			{
+				"file" : 32,
+				"parent" : 81
+			},
+			{
+				"command" : 7,
+				"file" : 32,
+				"line" : 9,
+				"parent" : 82
+			},
+			{
+				"file" : 31,
+				"parent" : 83
+			},
+			{
+				"command" : 6,
+				"file" : 31,
+				"line" : 61,
+				"parent" : 84
+			},
+			{
+				"command" : 7,
+				"file" : 7,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 37,
+				"parent" : 86
+			},
+			{
+				"command" : 8,
+				"file" : 37,
+				"line" : 21,
+				"parent" : 87
+			},
+			{
+				"file" : 36,
+				"parent" : 88
+			},
+			{
+				"command" : 7,
+				"file" : 36,
+				"line" : 41,
+				"parent" : 89
+			},
+			{
+				"file" : 35,
+				"parent" : 90
+			},
+			{
+				"command" : 7,
+				"file" : 35,
+				"line" : 9,
+				"parent" : 91
+			},
+			{
+				"file" : 34,
+				"parent" : 92
+			},
+			{
+				"command" : 6,
+				"file" : 34,
+				"line" : 61,
+				"parent" : 93
+			},
+			{
+				"command" : 7,
+				"file" : 33,
+				"line" : 41,
+				"parent" : 80
+			},
+			{
+				"file" : 41,
+				"parent" : 95
+			},
+			{
+				"command" : 8,
+				"file" : 41,
+				"line" : 21,
+				"parent" : 96
+			},
+			{
+				"file" : 40,
+				"parent" : 97
+			},
+			{
+				"command" : 7,
+				"file" : 40,
+				"line" : 41,
+				"parent" : 98
+			},
+			{
+				"file" : 39,
+				"parent" : 99
+			},
+			{
+				"command" : 7,
+				"file" : 39,
+				"line" : 9,
+				"parent" : 100
+			},
+			{
+				"file" : 38,
+				"parent" : 101
+			},
+			{
+				"command" : 6,
+				"file" : 38,
+				"line" : 61,
+				"parent" : 102
+			},
+			{
+				"command" : 7,
+				"file" : 36,
+				"line" : 41,
+				"parent" : 89
+			},
+			{
+				"file" : 52,
+				"parent" : 104
+			},
+			{
+				"command" : 8,
+				"file" : 52,
+				"line" : 21,
+				"parent" : 105
+			},
+			{
+				"file" : 51,
+				"parent" : 106
+			},
+			{
+				"command" : 7,
+				"file" : 51,
+				"line" : 41,
+				"parent" : 107
+			},
+			{
+				"file" : 50,
+				"parent" : 108
+			},
+			{
+				"command" : 8,
+				"file" : 50,
+				"line" : 21,
+				"parent" : 109
+			},
+			{
+				"file" : 49,
+				"parent" : 110
+			},
+			{
+				"command" : 7,
+				"file" : 49,
+				"line" : 41,
+				"parent" : 111
+			},
+			{
+				"file" : 48,
+				"parent" : 112
+			},
+			{
+				"command" : 8,
+				"file" : 48,
+				"line" : 21,
+				"parent" : 113
+			},
+			{
+				"file" : 47,
+				"parent" : 114
+			},
+			{
+				"command" : 7,
+				"file" : 47,
+				"line" : 41,
+				"parent" : 115
+			},
+			{
+				"file" : 46,
+				"parent" : 116
+			},
+			{
+				"command" : 8,
+				"file" : 46,
+				"line" : 21,
+				"parent" : 117
+			},
+			{
+				"file" : 45,
+				"parent" : 118
+			},
+			{
+				"command" : 7,
+				"file" : 45,
+				"line" : 41,
+				"parent" : 119
+			},
+			{
+				"file" : 44,
+				"parent" : 120
+			},
+			{
+				"command" : 8,
+				"file" : 44,
+				"line" : 21,
+				"parent" : 121
+			},
+			{
+				"file" : 43,
+				"parent" : 122
+			},
+			{
+				"command" : 13,
+				"file" : 43,
+				"line" : 24,
+				"parent" : 123
+			},
+			{
+				"command" : 12,
+				"file" : 42,
+				"line" : 867,
+				"parent" : 124
+			},
+			{
+				"command" : 11,
+				"file" : 42,
+				"line" : 695,
+				"parent" : 125
+			},
+			{
+				"command" : 10,
+				"file" : 42,
+				"line" : 359,
+				"parent" : 126
+			},
+			{
+				"command" : 9,
+				"file" : 42,
+				"line" : 340,
+				"parent" : 127
+			},
+			{
+				"command" : 7,
+				"file" : 49,
+				"line" : 41,
+				"parent" : 111
+			},
+			{
+				"file" : 54,
+				"parent" : 129
+			},
+			{
+				"command" : 7,
+				"file" : 54,
+				"line" : 9,
+				"parent" : 130
+			},
+			{
+				"file" : 53,
+				"parent" : 131
+			},
+			{
+				"command" : 6,
+				"file" : 53,
+				"line" : 61,
+				"parent" : 132
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"file" : 57,
+				"parent" : 134
+			},
+			{
+				"command" : 7,
+				"file" : 57,
+				"line" : 41,
+				"parent" : 135
+			},
+			{
+				"file" : 56,
+				"parent" : 136
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 55,
+				"parent" : 138
+			},
+			{
+				"command" : 6,
+				"file" : 55,
+				"line" : 61,
+				"parent" : 139
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 58,
+				"parent" : 141
+			},
+			{
+				"command" : 6,
+				"file" : 58,
+				"line" : 61,
+				"parent" : 142
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 59,
+				"parent" : 144
+			},
+			{
+				"command" : 6,
+				"file" : 59,
+				"line" : 61,
+				"parent" : 145
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 60,
+				"parent" : 147
+			},
+			{
+				"command" : 6,
+				"file" : 60,
+				"line" : 61,
+				"parent" : 148
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 61,
+				"parent" : 150
+			},
+			{
+				"command" : 6,
+				"file" : 61,
+				"line" : 61,
+				"parent" : 151
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 62,
+				"parent" : 153
+			},
+			{
+				"command" : 6,
+				"file" : 62,
+				"line" : 61,
+				"parent" : 154
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 63,
+				"parent" : 156
+			},
+			{
+				"command" : 6,
+				"file" : 63,
+				"line" : 61,
+				"parent" : 157
+			},
+			{
+				"command" : 7,
+				"file" : 56,
+				"line" : 9,
+				"parent" : 137
+			},
+			{
+				"file" : 64,
+				"parent" : 159
+			},
+			{
+				"command" : 6,
+				"file" : 64,
+				"line" : 61,
+				"parent" : 160
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"file" : 67,
+				"parent" : 162
+			},
+			{
+				"command" : 7,
+				"file" : 67,
+				"line" : 41,
+				"parent" : 163
+			},
+			{
+				"file" : 66,
+				"parent" : 164
+			},
+			{
+				"command" : 7,
+				"file" : 66,
+				"line" : 9,
+				"parent" : 165
+			},
+			{
+				"file" : 65,
+				"parent" : 166
+			},
+			{
+				"command" : 6,
+				"file" : 65,
+				"line" : 61,
+				"parent" : 167
+			},
+			{
+				"command" : 7,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 36
+			},
+			{
+				"file" : 71,
+				"parent" : 169
+			},
+			{
+				"command" : 8,
+				"file" : 71,
+				"line" : 21,
+				"parent" : 170
+			},
+			{
+				"file" : 70,
+				"parent" : 171
+			},
+			{
+				"command" : 7,
+				"file" : 70,
+				"line" : 41,
+				"parent" : 172
+			},
+			{
+				"file" : 69,
+				"parent" : 173
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 68,
+				"parent" : 175
+			},
+			{
+				"command" : 6,
+				"file" : 68,
+				"line" : 61,
+				"parent" : 176
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 72,
+				"parent" : 178
+			},
+			{
+				"command" : 6,
+				"file" : 72,
+				"line" : 61,
+				"parent" : 179
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 73,
+				"parent" : 181
+			},
+			{
+				"command" : 6,
+				"file" : 73,
+				"line" : 61,
+				"parent" : 182
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 74,
+				"parent" : 184
+			},
+			{
+				"command" : 6,
+				"file" : 74,
+				"line" : 61,
+				"parent" : 185
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 75,
+				"parent" : 187
+			},
+			{
+				"command" : 6,
+				"file" : 75,
+				"line" : 61,
+				"parent" : 188
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 76,
+				"parent" : 190
+			},
+			{
+				"command" : 6,
+				"file" : 76,
+				"line" : 61,
+				"parent" : 191
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 77,
+				"parent" : 193
+			},
+			{
+				"command" : 6,
+				"file" : 77,
+				"line" : 61,
+				"parent" : 194
+			},
+			{
+				"command" : 7,
+				"file" : 69,
+				"line" : 9,
+				"parent" : 174
+			},
+			{
+				"file" : 78,
+				"parent" : 196
+			},
+			{
+				"command" : 6,
+				"file" : 78,
+				"line" : 61,
+				"parent" : 197
+			},
+			{
+				"command" : 8,
+				"file" : 71,
+				"line" : 21,
+				"parent" : 170
+			},
+			{
+				"file" : 85,
+				"parent" : 199
+			},
+			{
+				"command" : 7,
+				"file" : 85,
+				"line" : 41,
+				"parent" : 200
+			},
+			{
+				"file" : 84,
+				"parent" : 201
+			},
+			{
+				"command" : 8,
+				"file" : 84,
+				"line" : 21,
+				"parent" : 202
+			},
+			{
+				"file" : 83,
+				"parent" : 203
+			},
+			{
+				"command" : 7,
+				"file" : 83,
+				"line" : 41,
+				"parent" : 204
+			},
+			{
+				"file" : 82,
+				"parent" : 205
+			},
+			{
+				"command" : 8,
+				"file" : 82,
+				"line" : 21,
+				"parent" : 206
+			},
+			{
+				"file" : 81,
+				"parent" : 207
+			},
+			{
+				"command" : 7,
+				"file" : 81,
+				"line" : 41,
+				"parent" : 208
+			},
+			{
+				"file" : 80,
+				"parent" : 209
+			},
+			{
+				"command" : 7,
+				"file" : 80,
+				"line" : 9,
+				"parent" : 210
+			},
+			{
+				"file" : 79,
+				"parent" : 211
+			},
+			{
+				"command" : 6,
+				"file" : 79,
+				"line" : 61,
+				"parent" : 212
+			},
+			{
+				"command" : 8,
+				"file" : 82,
+				"line" : 21,
+				"parent" : 206
+			},
+			{
+				"file" : 90,
+				"parent" : 214
+			},
+			{
+				"command" : 7,
+				"file" : 90,
+				"line" : 41,
+				"parent" : 215
+			},
+			{
+				"file" : 89,
+				"parent" : 216
+			},
+			{
+				"command" : 8,
+				"file" : 89,
+				"line" : 21,
+				"parent" : 217
+			},
+			{
+				"file" : 88,
+				"parent" : 218
+			},
+			{
+				"command" : 7,
+				"file" : 88,
+				"line" : 41,
+				"parent" : 219
+			},
+			{
+				"file" : 87,
+				"parent" : 220
+			},
+			{
+				"command" : 7,
+				"file" : 87,
+				"line" : 9,
+				"parent" : 221
+			},
+			{
+				"file" : 86,
+				"parent" : 222
+			},
+			{
+				"command" : 6,
+				"file" : 86,
+				"line" : 61,
+				"parent" : 223
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 2
+			},
+			{
+				"command" : 16,
+				"file" : 2,
+				"line" : 141,
+				"parent" : 7
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/irman/micromamba/envs/ros2_env/include"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Werror=conversion"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Werror=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Werror=shadow"
+				},
+				{
+					"backtrace" : 225,
+					"fragment" : "-Werror=format"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "FMT_SHARED"
+				},
+				{
+					"backtrace" : 226,
+					"define" : "TEST_FILES_DIRECTORY=\"/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/pose_broadcaster/test\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "TINYXML2_IMPORT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_FILE_OFFSET_BITS=64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/src/ros2_controllers/pose_broadcaster/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster/include"
+				},
+				{
+					"backtrace" : 227,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/src/gmock_vendor/include"
+				},
+				{
+					"backtrace" : 227,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/src/gtest_vendor/include"
+				},
+				{
+					"backtrace" : 228,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager/include/controller_manager"
+				},
+				{
+					"backtrace" : 228,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets/include/ros2_control_test_assets"
+				},
+				{
+					"backtrace" : 228,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/parameter_traits"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rclcpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/ament_index_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/libstatistics_collector"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcutils"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rmw"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_fastrtps_c"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_introspection_c"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_introspection_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl_interfaces"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl_logging_interface"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl_yaml_param_parser"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/tracetools"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcpputils"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/statistics_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosgraph_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_cpp"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rsl"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/eigen3"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rclcpp_lifecycle"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl_lifecycle"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/lifecycle_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/include/hardware_interface"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/control_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/action_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/unique_identifier_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/geometry_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/std_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/sensor_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/trajectory_msgs"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/pluginlib"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/class_loader"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/realtime_tools"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rclcpp_action"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/rcl_action"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/irman/micromamba/envs/ros2_env/include/tf2_msgs"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/include/controller_manager_msgs"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "pose_broadcaster_parameters::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "pose_broadcaster::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "gmock::@0590522bda6a4df7f28a"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "gmock_main::@0590522bda6a4df7f28a"
+		}
+	],
+	"id" : "test_load_pose_broadcaster::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/irman/micromamba/envs/ros2_env/include",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,--no-as-needed  /home/irman/micromamba/envs/ros2_env/lib/libbackward.so -Wl,--as-needed -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/irman/micromamba/envs/ros2_env/lib -Wl,-rpath-link,/home/irman/micromamba/envs/ros2_env/lib -L/home/irman/micromamba/envs/ros2_env/lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/irman/Humanoid-VLA-Simulations/build/pose_broadcaster:/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "gmock/libgmock_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "gmock/libgmock.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "libpose_broadcaster.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib/libcontroller_manager.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librsl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtf2_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib/libcontroller_interface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libfake_components.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libmock_components.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib/libhardware_interface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librclcpp_lifecycle.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_lifecycle.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libcontrol_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 62,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libsensor_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 62,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtrajectory_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libgeometry_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtinyxml2.so.11.0.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 69,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libclass_loader.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libconsole_bridge.so.1.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librealtime_tools.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libthread_priority.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 85,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librclcpp_action.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librclcpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblibstatistics_collector.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosgraph_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstatistics_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_action.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_yaml_param_parser.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libyaml.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libtracetools.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librmw_implementation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_logging_spdlog.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcl_logging_interface.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libfmt.so.11.2.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 140,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 140,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 143,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 146,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 146,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 149,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 149,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 152,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 152,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 155,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 158,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 161,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libaction_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 155,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 158,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 161,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libunique_identifier_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 85,
+				"fragment" : "-lcap",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libament_index_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/libcontroller_manager_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/liblifecycle_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 177,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 177,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 180,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 177,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 177,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libfastcdr.so.1.0.24",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 180,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 183,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 186,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 186,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 183,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 189,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 94,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 168,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 192,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 195,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 198,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 213,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 198,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcpputils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 198,
+				"fragment" : "/home/irman/micromamba/envs/ros2_env/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 224,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 224,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "test_load_pose_broadcaster",
+	"nameOnDisk" : "test_load_pose_broadcaster",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "test/test_load_pose_broadcaster.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

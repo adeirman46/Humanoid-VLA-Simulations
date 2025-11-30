@@ -57,10 +57,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/g1_controller
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/g1_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/g1_controller
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/g1_controller
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles /home/irman/ROS2_Humanoid_VLA/build/g1_controller//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles /home/irman/Humanoid-VLA-Simulations/build/g1_controller//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/ROS2_Humanoid_VLA/build/g1_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irman/Humanoid-VLA-Simulations/build/g1_controller/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,17 +198,17 @@ g1_controller_uninstall/fast:
 .PHONY : g1_controller_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_g1_controller
+# Target rules for targets named ament_cmake_python_copy_g1_controller
 
 # Build rule for target.
-ament_cmake_python_symlink_g1_controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_g1_controller
-.PHONY : ament_cmake_python_symlink_g1_controller
+ament_cmake_python_copy_g1_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_g1_controller
+.PHONY : ament_cmake_python_copy_g1_controller
 
 # fast build rule for target.
-ament_cmake_python_symlink_g1_controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_symlink_g1_controller.dir/build
-.PHONY : ament_cmake_python_symlink_g1_controller/fast
+ament_cmake_python_copy_g1_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build.make CMakeFiles/ament_cmake_python_copy_g1_controller.dir/build
+.PHONY : ament_cmake_python_copy_g1_controller/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_g1_controller_egg
@@ -237,7 +237,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_g1_controller_egg"
-	@echo "... ament_cmake_python_symlink_g1_controller"
+	@echo "... ament_cmake_python_copy_g1_controller"
 	@echo "... g1_controller_uninstall"
 	@echo "... uninstall"
 .PHONY : help

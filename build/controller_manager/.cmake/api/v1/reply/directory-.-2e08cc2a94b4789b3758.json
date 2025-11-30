@@ -1,0 +1,952 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"pluginlib_export_plugin_description_file",
+			"ament_environment_hooks",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"ament_index_register_resource",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"include",
+			"ament_execute_extensions",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package",
+			"ament_generate_version_header"
+		],
+		"files" : 
+		[
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake",
+			"CMakeLists.txt",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/pluginlib/cmake/pluginlib_package_hook.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake",
+			"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gen_version_h/cmake/ament_generate_version_header.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 7
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 81,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 159,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 173,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 13
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 175,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 223,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 234,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 238,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 245,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 250,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 38,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 36,
+				"parent" : 21
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 22
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 39,
+				"parent" : 20
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 154,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 174,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 181,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 191,
+				"parent" : 25
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 255,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 66,
+				"parent" : 30
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 31
+			},
+			{
+				"file" : 6,
+				"parent" : 32
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 47,
+				"parent" : 33
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 29,
+				"parent" : 34
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 35
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 48,
+				"parent" : 33
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 43,
+				"parent" : 37
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 38
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 31
+			},
+			{
+				"file" : 9,
+				"parent" : 40
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 20,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 70,
+				"parent" : 42
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 42
+			},
+			{
+				"command" : 12,
+				"file" : 9,
+				"line" : 26,
+				"parent" : 41
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 47
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 47
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 47
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 107,
+				"parent" : 47
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 119,
+				"parent" : 47
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 31
+			},
+			{
+				"file" : 12,
+				"parent" : 53
+			},
+			{
+				"command" : 13,
+				"file" : 12,
+				"line" : 16,
+				"parent" : 54
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 29,
+				"parent" : 55
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 56
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 31
+			},
+			{
+				"file" : 13,
+				"parent" : 58
+			},
+			{
+				"command" : 6,
+				"file" : 13,
+				"line" : 22,
+				"parent" : 59
+			},
+			{
+				"command" : 0,
+				"file" : 5,
+				"line" : 105,
+				"parent" : 60
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 48,
+				"parent" : 31
+			},
+			{
+				"file" : 14,
+				"parent" : 62
+			},
+			{
+				"command" : 0,
+				"file" : 14,
+				"line" : 28,
+				"parent" : 63
+			},
+			{
+				"command" : 14,
+				"file" : 8,
+				"line" : 68,
+				"parent" : 30
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 122,
+				"parent" : 65
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 122,
+				"parent" : 65
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 150,
+				"parent" : 65
+			},
+			{
+				"command" : 0,
+				"file" : 8,
+				"line" : 157,
+				"parent" : 65
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 256,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 15,
+				"line" : 167,
+				"parent" : 70
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/test/test_controller",
+			"paths" : 
+			[
+				"test/test_controller/test_controller.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtest_controller.so"
+			],
+			"targetId" : "test_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "test_controller::@6890427a1f51a3e7e1df",
+				"index" : 13
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/test/test_controller_failed_init",
+			"paths" : 
+			[
+				"test/test_controller_failed_init/test_controller_failed_init.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtest_controller_failed_init.so"
+			],
+			"targetId" : "test_controller_failed_init::@6890427a1f51a3e7e1df",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "test_controller_failed_init::@6890427a1f51a3e7e1df",
+				"index" : 15
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/test/test_chainable_controller",
+			"paths" : 
+			[
+				"test/test_chainable_controller/test_chainable_controller.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtest_chainable_controller.so"
+			],
+			"targetId" : "test_chainable_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "test_chainable_controller::@6890427a1f51a3e7e1df",
+				"index" : 12
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/test/test_controller_with_interfaces",
+			"paths" : 
+			[
+				"test/test_controller_with_interfaces/test_controller_with_interfaces.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtest_controller_with_interfaces.so"
+			],
+			"targetId" : "test_controller_with_interfaces::@6890427a1f51a3e7e1df",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "test_controller_with_interfaces::@6890427a1f51a3e7e1df",
+				"index" : 20
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/test/test_controller_failed_activate",
+			"paths" : 
+			[
+				"test/test_controller_failed_activate/test_controller_failed_activate.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libtest_controller_failed_activate.so"
+			],
+			"targetId" : "test_controller_failed_activate::@6890427a1f51a3e7e1df",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "test_controller_failed_activate::@6890427a1f51a3e7e1df",
+				"index" : 14
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "test",
+			"paths" : 
+			[
+				"test/test_ros2_control_node.yaml",
+				"test/test_controller_spawner_wildcard_entries.yaml",
+				"test/test_controller_spawner_with_basic_controllers.yaml",
+				"test/test_controller_spawner_with_interfaces.yaml",
+				"test/test_controller_spawner_with_type.yaml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "include/controller_manager",
+			"paths" : 
+			[
+				{
+					"from" : "include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libcontroller_manager.so"
+			],
+			"targetId" : "controller_manager::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "lib/controller_manager",
+			"paths" : 
+			[
+				"ros2_control_node"
+			],
+			"targetId" : "ros2_control_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.11/site-packages/controller_manager-2.52.2-py3.11.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_python/controller_manager/controller_manager.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "lib/controller_manager/",
+			"paths" : 
+			[
+				{
+					"from" : "/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_python/controller_manager/scripts",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.11/site-packages/controller_manager",
+			"paths" : 
+			[
+				{
+					"from" : "controller_manager",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/controller_manager"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/controller_manager"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/micromamba/envs/ros2_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/environment",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 49,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 57,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_index/share/ament_index/resource_index/packages/controller_manager"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/controller_interface__pluginlib__plugin",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/controller_manager"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 64,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/cmake",
+			"exportName" : "export_controller_manager",
+			"exportTargets" : 
+			[
+				{
+					"id" : "controller_manager::@6890427a1f51a3e7e1df",
+					"index" : 5
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/8c45cbd45b920a4cd202d8d73a02fe1e/export_controller_managerExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 66,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/cmake",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 67,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/cmake",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 68,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager/cmake",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_core/controller_managerConfig.cmake",
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_cmake_core/controller_managerConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 69,
+			"component" : "Unspecified",
+			"destination" : "share/controller_manager",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 71,
+			"component" : "Unspecified",
+			"destination" : "include/controller_manager/controller_manager",
+			"paths" : 
+			[
+				"/home/irman/Humanoid-VLA-Simulations/build/controller_manager/ament_generate_version_header/controller_manager/controller_manager/version.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

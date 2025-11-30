@@ -1,3 +1,6 @@
 # generated from colcon_core/shell/template/command_prefix.sh.em
-. "/home/irman/ROS2_Humanoid_VLA/install/ros2_control_test_assets/share/ros2_control_test_assets/package.sh"
-. "/home/irman/ROS2_Humanoid_VLA/install/hardware_interface_testing/share/hardware_interface_testing/package.sh"
+. "/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/share/controller_manager_msgs/package.sh"
+. "/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets/share/ros2_control_test_assets/package.sh"
+. "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/package.sh"
+. "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/package.sh"
+. "/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing/share/hardware_interface_testing/package.sh"

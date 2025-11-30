@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/irman/Humanoid-VLA-Simulations/build/controller_interface/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/controller_interface/gmock/cmake_install.cmake",
+		"/home/irman/Humanoid-VLA-Simulations/build/controller_interface/gtest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

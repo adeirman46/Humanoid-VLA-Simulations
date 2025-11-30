@@ -1,0 +1,137 @@
+[0.011s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_interface -DCMAKE_INSTALL_PREFIX=/home/irman/Humanoid-VLA-Simulations/install/controller_interface
+[0.161s] -- The CXX compiler identification is GNU 14.3.0
+[0.172s] -- Detecting CXX compiler ABI info
+[0.268s] -- Detecting CXX compiler ABI info - done
+[0.287s] -- Check for working CXX compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.304s] -- Found ament_cmake: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake/cmake)
+[0.421s] -- Found Python3: /home/irman/micromamba/envs/ros2_env/bin/python3 (found version "3.11.14") found components: Interpreter
+[0.572s] -- Found hardware_interface: 2.52.2 (/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/share/hardware_interface/cmake)
+[0.655s] -- Found rosidl_generator_c: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_c/cmake)
+[0.668s] -- Found rosidl_adapter: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_adapter/cmake)
+[0.687s] -- Found rosidl_generator_cpp: 3.1.6 (/home/irman/micromamba/envs/ros2_env/share/rosidl_generator_cpp/cmake)
+[0.712s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.748s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.106s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[1.234s] -- Checking for module 'yaml-0.1'
+[1.359s] --   Found yaml-0.1, version 0.2.5
+[1.656s] -- Found rmw_implementation_cmake: 6.1.2 (/home/irman/micromamba/envs/ros2_env/share/rmw_implementation_cmake/cmake)
+[1.664s] -- Found rmw_fastrtps_cpp: 6.2.7 (/home/irman/micromamba/envs/ros2_env/share/rmw_fastrtps_cpp/cmake)
+[1.723s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.103s] -- Found OpenSSL: /home/irman/micromamba/envs/ros2_env/lib/libcrypto.so (found version "3.5.4")
+[2.107s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.147s] -- Found FastRTPS: /home/irman/micromamba/envs/ros2_env/include
+[2.152s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.178s] -- Found TinyXML2 via Config file: /home/irman/micromamba/envs/ros2_env/lib/cmake/tinyxml2
+[2.209s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.226s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.327s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.327s] -- Found Threads: TRUE
+[2.424s] -- Found ament_cmake_gmock: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gmock/cmake)
+[2.432s] -- Found gmock sources under '/home/irman/micromamba/envs/ros2_env/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.478s] -- The C compiler identification is GNU 14.3.0
+[2.488s] -- Detecting C compiler ABI info
+[2.571s] -- Detecting C compiler ABI info - done
+[2.589s] -- Check for working C compiler: /home/irman/micromamba/envs/ros2_env/bin/x86_64-conda-linux-gnu-cc - skipped
+[2.589s] -- Detecting C compile features
+[2.589s] -- Detecting C compile features - done
+[2.598s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gmock_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[2.599s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[2.599s]   CMake.
+[2.599s] 
+[2.599s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[2.599s]   to tell CMake that the project requires at least <min> but has been updated
+[2.599s]   to work with policies introduced by <max> or earlier.
+[2.599s] 
+[2.599s] 
+[2.611s] -- Found ament_cmake_gtest: 1.3.12 (/home/irman/micromamba/envs/ros2_env/share/ament_cmake_gtest/cmake)
+[2.612s] -- Found gtest sources under '/home/irman/micromamba/envs/ros2_env/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.617s] CMake Deprecation Warning at /home/irman/micromamba/envs/ros2_env/src/gtest_vendor/CMakeLists.txt:2 (cmake_minimum_required):
+[2.617s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[2.617s]   CMake.
+[2.617s] 
+[2.617s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[2.617s]   to tell CMake that the project requires at least <min> but has been updated
+[2.618s]   to work with policies introduced by <max> or earlier.
+[2.618s] 
+[2.618s] 
+[2.709s] -- Configuring done (2.7s)
+[2.801s] -- Generating done (0.1s)
+[2.825s] -- Build files have been written to: /home/irman/Humanoid-VLA-Simulations/build/controller_interface
+[2.852s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake /home/irman/Humanoid-VLA-Simulations/src/ros2_control/controller_interface -DCMAKE_INSTALL_PREFIX=/home/irman/Humanoid-VLA-Simulations/install/controller_interface
+[2.853s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake --build /home/irman/Humanoid-VLA-Simulations/build/controller_interface -- -j16 -l16
+[2.923s] [  4%] Generating controller_interface/version.h
+[2.947s] [  4%] Built target ament_generate_version_header__controller_interface
+[2.975s] [  8%] Building CXX object gmock/CMakeFiles/gmock.dir/home/irman/micromamba/envs/ros2_env/src/gtest_vendor/src/gtest-all.cc.o
+[13.019s] [ 12%] Building CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[17.371s] [ 16%] Linking CXX static library libgmock.a
+[17.448s] [ 16%] Built target gmock
+[17.494s] [ 20%] Building CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[17.505s] [ 25%] Building CXX object CMakeFiles/controller_interface.dir/src/controller_interface_base.cpp.o
+[20.079s] [ 29%] Linking CXX static library libgmock_main.a
+[20.121s] [ 29%] Built target gmock_main
+[22.886s] [ 37%] Building CXX object CMakeFiles/controller_interface.dir/src/chainable_controller_interface.cpp.o
+[22.887s] [ 37%] Building CXX object CMakeFiles/controller_interface.dir/src/controller_interface.cpp.o
+[26.998s] [ 41%] Linking CXX shared library libcontroller_interface.so
+[27.135s] [ 41%] Built target controller_interface
+[27.155s] [ 54%] Building CXX object CMakeFiles/test_controller_with_options.dir/test/test_controller_with_options.cpp.o
+[27.155s] [ 62%] Building CXX object CMakeFiles/test_controller_interface.dir/test/test_controller_interface.cpp.o
+[27.155s] [ 54%] Building CXX object CMakeFiles/test_imu_sensor.dir/test/test_imu_sensor.cpp.o
+[27.155s] [ 62%] Building CXX object CMakeFiles/test_force_torque_sensor.dir/test/test_force_torque_sensor.cpp.o
+[27.156s] [ 62%] Building CXX object CMakeFiles/test_chainable_controller_interface.dir/test/test_chainable_controller_interface.cpp.o
+[27.156s] [ 66%] Building CXX object CMakeFiles/test_semantic_component_interface.dir/test/test_semantic_component_interface.cpp.o
+[27.156s] [ 70%] Building CXX object CMakeFiles/test_pose_sensor.dir/test/test_pose_sensor.cpp.o
+[30.645s] [ 75%] Linking CXX executable test_pose_sensor
+[30.846s] [ 79%] Linking CXX executable test_imu_sensor
+[30.898s] [ 79%] Built target test_pose_sensor
+[30.981s] [ 83%] Linking CXX executable test_semantic_component_interface
+[31.083s] [ 83%] Built target test_imu_sensor
+[31.196s] [ 83%] Built target test_semantic_component_interface
+[32.066s] [ 87%] Linking CXX executable test_force_torque_sensor
+[32.263s] [ 87%] Built target test_force_torque_sensor
+[32.461s] [ 91%] Linking CXX executable test_controller_with_options
+[32.646s] [ 91%] Built target test_controller_with_options
+[33.021s] [ 95%] Linking CXX executable test_chainable_controller_interface
+[33.267s] [ 95%] Built target test_chainable_controller_interface
+[33.339s] [100%] Linking CXX executable test_controller_interface
+[33.536s] [100%] Built target test_controller_interface
+[33.553s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake --build /home/irman/Humanoid-VLA-Simulations/build/controller_interface -- -j16 -l16
+[33.555s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake --install /home/irman/Humanoid-VLA-Simulations/build/controller_interface
+[33.565s] -- Install configuration: ""
+[33.565s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface
+[33.565s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components/force_torque_sensor.hpp
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components/pose_sensor.hpp
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components/range_sensor.hpp
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components/imu_sensor.hpp
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/semantic_components/semantic_component_interface.hpp
+[33.566s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface
+[33.567s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/controller_interface.hpp
+[33.567s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/visibility_control.h
+[33.567s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/helpers.hpp
+[33.567s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/controller_interface_base.hpp
+[33.567s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/chainable_controller_interface.hpp
+[33.568s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib/libcontroller_interface.so
+[33.568s] -- Set non-toolchain portion of runtime path of "/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib/libcontroller_interface.so" to ""
+[33.568s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/ament_index/resource_index/package_run_dependencies/controller_interface
+[33.569s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/ament_index/resource_index/parent_prefix_path/controller_interface
+[33.569s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/environment/ament_prefix_path.sh
+[33.569s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/environment/ament_prefix_path.dsv
+[33.569s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/environment/path.sh
+[33.570s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/environment/path.dsv
+[33.570s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/local_setup.bash
+[33.570s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/local_setup.sh
+[33.570s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/local_setup.zsh
+[33.571s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/local_setup.dsv
+[33.571s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/package.dsv
+[33.571s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/ament_index/resource_index/packages/controller_interface
+[33.571s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/export_controller_interfaceExport.cmake
+[33.572s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/export_controller_interfaceExport-noconfig.cmake
+[33.572s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/ament_cmake_export_targets-extras.cmake
+[33.572s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.572s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/controller_interfaceConfig.cmake
+[33.572s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/cmake/controller_interfaceConfig-version.cmake
+[33.573s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/share/controller_interface/package.xml
+[33.573s] -- Installing: /home/irman/Humanoid-VLA-Simulations/install/controller_interface/include/controller_interface/controller_interface/version.h
+[33.576s] Invoked command in '/home/irman/Humanoid-VLA-Simulations/build/controller_interface' returned '0': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins /home/irman/micromamba/envs/ros2_env/bin/cmake --install /home/irman/Humanoid-VLA-Simulations/build/controller_interface

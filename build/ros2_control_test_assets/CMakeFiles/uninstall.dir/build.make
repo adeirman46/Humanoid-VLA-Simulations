@@ -53,10 +53,10 @@ RM = /home/irman/micromamba/envs/ros2_env/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irman/ROS2_Humanoid_VLA/src/ros2_control/ros2_control_test_assets
+CMAKE_SOURCE_DIR = /home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets
+CMAKE_BINARY_DIR = /home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets
 
 # Utility rule file for uninstall.
 
@@ -81,6 +81,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/ROS2_Humanoid_VLA/src/ros2_control/ros2_control_test_assets /home/irman/ROS2_Humanoid_VLA/src/ros2_control/ros2_control_test_assets /home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets /home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets /home/irman/ROS2_Humanoid_VLA/build/ros2_control_test_assets/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets /home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2_control_test_assets /home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets /home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets /home/irman/Humanoid-VLA-Simulations/build/ros2_control_test_assets/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

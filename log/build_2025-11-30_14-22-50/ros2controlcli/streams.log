@@ -1,0 +1,94 @@
+[1.899s] Invoking command in '/home/irman/Humanoid-VLA-Simulations/src/ros2_control/ros2controlcli': AMENT_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing:/home/irman/Humanoid-VLA-Simulations/install/controller_interface:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface:/home/irman/Humanoid-VLA-Simulations/install/ros2_control_test_assets:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(ros2_env) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface_testing/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/hardware_interface/lib:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib:/home/irman/micromamba/envs/ros2_env/opt/rviz_ogre_vendor/lib:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins:/home/irman/micromamba/envs/ros2_env/lib/gazebo-11/plugins PYTHONPATH=/home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/prefix_override:/home/irman/micromamba/envs/ros2_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages:/home/irman/Humanoid-VLA-Simulations/install/controller_manager/lib/python3.11/site-packages:/home/irman/Humanoid-VLA-Simulations/install/controller_manager_msgs/lib/python3.11/site-packages:${PYTHONPATH} /home/irman/micromamba/envs/ros2_env/bin/python3.11 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2controlcli build --build-base /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build install --record /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/install.log --single-version-externally-managed install_data
+[2.129s] /home/irman/micromamba/envs/ros2_env/lib/python3.11/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.129s]   warnings.warn(msg)
+[2.186s] /home/irman/micromamba/envs/ros2_env/lib/python3.11/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[2.186s] !!
+[2.187s] 
+[2.187s]         ********************************************************************************
+[2.187s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[2.187s] 
+[2.187s]         License :: OSI Approved :: Apache Software License
+[2.187s] 
+[2.187s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[2.187s]         ********************************************************************************
+[2.187s] 
+[2.187s] !!
+[2.187s]   self._finalize_license_expression()
+[2.292s] running egg_info
+[2.318s] creating ../../../build/ros2controlcli/ros2controlcli.egg-info
+[2.318s] writing ../../../build/ros2controlcli/ros2controlcli.egg-info/PKG-INFO
+[2.321s] writing dependency_links to ../../../build/ros2controlcli/ros2controlcli.egg-info/dependency_links.txt
+[2.321s] writing entry points to ../../../build/ros2controlcli/ros2controlcli.egg-info/entry_points.txt
+[2.321s] writing requirements to ../../../build/ros2controlcli/ros2controlcli.egg-info/requires.txt
+[2.321s] writing top-level names to ../../../build/ros2controlcli/ros2controlcli.egg-info/top_level.txt
+[2.321s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[2.369s] reading manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[2.371s] writing manifest file '../../../build/ros2controlcli/ros2controlcli.egg-info/SOURCES.txt'
+[2.371s] running build
+[2.373s] running build_py
+[2.373s] creating /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli
+[2.373s] copying ros2controlcli/__init__.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli
+[2.373s] creating /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.373s] copying ros2controlcli/verb/list_controller_types.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.382s] copying ros2controlcli/verb/load_controller.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.384s] copying ros2controlcli/verb/set_controller_state.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.385s] copying ros2controlcli/verb/list_hardware_interfaces.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.385s] copying ros2controlcli/verb/set_hardware_component_state.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.385s] copying ros2controlcli/verb/unload_controller.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.385s] copying ros2controlcli/verb/switch_controllers.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.385s] copying ros2controlcli/verb/list_hardware_components.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.386s] copying ros2controlcli/verb/list_controllers.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.388s] copying ros2controlcli/verb/reload_controller_libraries.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.389s] copying ros2controlcli/verb/__init__.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.389s] copying ros2controlcli/verb/view_controller_chains.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb
+[2.389s] creating /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/command
+[2.389s] copying ros2controlcli/command/control.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/command
+[2.390s] copying ros2controlcli/command/__init__.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/command
+[2.390s] creating /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/api
+[2.390s] copying ros2controlcli/api/__init__.py -> /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/api
+[2.393s] running install
+[2.400s] running install_lib
+[2.423s] creating /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli
+[2.425s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/__init__.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli
+[2.425s] creating /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controller_types.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/load_controller.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/set_controller_state.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_interfaces.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/set_hardware_component_state.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.426s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/unload_controller.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.429s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/switch_controllers.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.429s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/list_hardware_components.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/list_controllers.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/reload_controller_libraries.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/__init__.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/verb/view_controller_chains.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb
+[2.430s] creating /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/command
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/command/control.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/command
+[2.430s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/command/__init__.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/command
+[2.430s] creating /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/api
+[2.431s] copying /home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/build/lib/ros2controlcli/api/__init__.py -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/api
+[2.431s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/__init__.py to __init__.cpython-311.pyc
+[2.431s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/list_controller_types.py to list_controller_types.cpython-311.pyc
+[2.434s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/load_controller.py to load_controller.cpython-311.pyc
+[2.435s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/set_controller_state.py to set_controller_state.cpython-311.pyc
+[2.437s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/list_hardware_interfaces.py to list_hardware_interfaces.cpython-311.pyc
+[2.439s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/set_hardware_component_state.py to set_hardware_component_state.cpython-311.pyc
+[2.439s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/unload_controller.py to unload_controller.cpython-311.pyc
+[2.441s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/switch_controllers.py to switch_controllers.cpython-311.pyc
+[2.442s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/list_hardware_components.py to list_hardware_components.cpython-311.pyc
+[2.444s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/list_controllers.py to list_controllers.cpython-311.pyc
+[2.444s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/reload_controller_libraries.py to reload_controller_libraries.cpython-311.pyc
+[2.444s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/__init__.py to __init__.cpython-311.pyc
+[2.444s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/verb/view_controller_chains.py to view_controller_chains.cpython-311.pyc
+[2.446s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/command/control.py to control.cpython-311.pyc
+[2.447s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/command/__init__.py to __init__.cpython-311.pyc
+[2.448s] byte-compiling /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli/api/__init__.py to __init__.cpython-311.pyc
+[2.449s] running install_data
+[2.450s] copying package.xml -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/share/ros2controlcli
+[2.450s] creating /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/share/ament_index/resource_index/packages
+[2.452s] copying resource/ros2controlcli -> /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/share/ament_index/resource_index/packages
+[2.452s] running install_egg_info
+[2.473s] Copying ../../../build/ros2controlcli/ros2controlcli.egg-info to /home/irman/Humanoid-VLA-Simulations/install/ros2controlcli/lib/python3.11/site-packages/ros2controlcli-2.52.2-py3.11.egg-info
+[2.474s] running install_scripts
+[2.526s] writing list of installed files to '/home/irman/Humanoid-VLA-Simulations/build/ros2controlcli/install.log'
