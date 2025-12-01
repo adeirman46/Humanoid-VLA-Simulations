@@ -55,6 +55,38 @@ position_trajectory_controller:
       - position
       - velocity
     
+    # PID gains for position control - STRONGER gains to hold positions
+    gains:
+      left_hip_pitch_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      left_hip_roll_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      left_hip_yaw_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      left_knee_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      left_ankle_pitch_joint: {p: 2000.0, d: 100.0, i: 0.0}  # Extra strong for ankles!
+      left_ankle_roll_joint: {p: 2000.0, d: 100.0, i: 0.0}   # Extra strong for ankles!
+      right_hip_pitch_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      right_hip_roll_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      right_hip_yaw_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      right_knee_joint: {p: 1000.0, d: 50.0, i: 0.0}
+      right_ankle_pitch_joint: {p: 2000.0, d: 100.0, i: 0.0}  # Extra strong for ankles!
+      right_ankle_roll_joint: {p: 2000.0, d: 100.0, i: 0.0}   # Extra strong for ankles!
+      waist_yaw_joint: {p: 500.0, d: 25.0, i: 0.0}
+      waist_roll_joint: {p: 500.0, d: 25.0, i: 0.0}
+      waist_pitch_joint: {p: 500.0, d: 25.0, i: 0.0}
+      left_shoulder_pitch_joint: {p: 500.0, d: 25.0, i: 0.0}
+      left_shoulder_roll_joint: {p: 500.0, d: 25.0, i: 0.0}
+      left_shoulder_yaw_joint: {p: 500.0, d: 25.0, i: 0.0}
+      left_elbow_joint: {p: 500.0, d: 25.0, i: 0.0}
+      left_wrist_roll_joint: {p: 300.0, d: 15.0, i: 0.0}
+      left_wrist_pitch_joint: {p: 300.0, d: 15.0, i: 0.0}
+      left_wrist_yaw_joint: {p: 300.0, d: 15.0, i: 0.0}
+      right_shoulder_pitch_joint: {p: 500.0, d: 25.0, i: 0.0}
+      right_shoulder_roll_joint: {p: 500.0, d: 25.0, i: 0.0}
+      right_shoulder_yaw_joint: {p: 500.0, d: 25.0, i: 0.0}
+      right_elbow_joint: {p: 500.0, d: 25.0, i: 0.0}
+      right_wrist_roll_joint: {p: 300.0, d: 15.0, i: 0.0}
+      right_wrist_pitch_joint: {p: 300.0, d: 15.0, i: 0.0}
+      right_wrist_yaw_joint: {p: 300.0, d: 15.0, i: 0.0}
+    
     state_publish_rate: 50.0
     action_monitor_rate: 20.0
     
@@ -64,3 +96,4 @@ position_trajectory_controller:
     constraints:
       stopped_velocity_tolerance: 0.01
       goal_time: 0.0
+

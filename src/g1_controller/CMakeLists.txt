@@ -20,6 +20,7 @@ install(PROGRAMS
   scripts/gui_controller.py
   scripts/ros2_control_gui.py
   scripts/wasd_controller.py
+  scripts/wasd_controller_v2.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

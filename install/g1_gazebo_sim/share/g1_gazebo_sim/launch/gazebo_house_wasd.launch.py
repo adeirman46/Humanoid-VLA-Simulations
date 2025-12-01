@@ -1,0 +1,1 @@
+/home/irman/Humanoid-VLA-Simulations/src/g1_gazebo_sim/launch/gazebo_house_wasd.launch.py

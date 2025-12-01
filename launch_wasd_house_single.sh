@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# Unitree G1 with WASD Keyboard Control - Launch Script
+# Unitree G1 with WASD Keyboard Control in House - Single Terminal Launch Script
+# This launches everything in one terminal using the Python launch file
 
 set -e  
 
 echo "========================================="
-echo "  Unitree G1 - WASD Keyboard Control"
+echo "  Unitree G1 - WASD Control in House"
+echo "  (Single Terminal Mode)"
 echo "========================================="
 echo ""
 
@@ -17,24 +19,24 @@ fi
 
 echo "✓ Found micromamba"
 
-# Activate ROS2 environment
+# Get the workspace directory
+WORKSPACE_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 echo "🔄 Activating ros2_env environment..."
 eval "$(micromamba shell hook --shell bash)"
 micromamba activate ros2_env
 
-# Source the workspace
 echo "🔄 Sourcing workspace..."
-cd "$(dirname "$0")"
-source install/setup.bash
+source "$WORKSPACE_DIR/install/setup.bash"
 
 echo ""
 echo "========================================="
-echo "  Starting System Components"
+echo "  Launching G1 in House with WASD"
 echo "========================================="
 echo ""
 echo "Timeline:"
-echo "  0s  - Gazebo starts with robot"
-echo "  5s  - Robot spawns"
+echo "  0s  - Gazebo starts with house world"
+echo "  5s  - Robot spawns in house"
 echo "  8s  - Joint state broadcaster loads"
 echo "  10s - Position controller loads"
 echo "  14s - WASD Controller starts"
@@ -47,14 +49,8 @@ echo "  D - Turn Right (Clockwise)"
 echo "  SPACE - Stand Pose"
 echo "  ESC - Quit"
 echo ""
-echo "This uses ROS2 Control with:"
-echo "  ✓ gazebo_ros2_control plugin"
-echo "  ✓ JointTrajectory action interface"
-echo "  ✓ Position control"
-echo "  ✓ Real-time keyboard input"
-echo ""
-echo "Use CTRL+C to stop"
+echo "Use CTRL+C to stop everything"
 echo ""
 
-# Launch
-ros2 launch g1_controller robot_wasd_control.launch.py
+# Launch everything using the Python launch file
+ros2 launch g1_gazebo_sim gazebo_house_wasd.launch.py

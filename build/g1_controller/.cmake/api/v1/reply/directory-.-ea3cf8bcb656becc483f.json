@@ -101,19 +101,19 @@
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 27,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 32,
+				"line" : 33,
 				"parent" : 0
 			},
 			{
 				"command" : 9,
 				"file" : 3,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
@@ -355,7 +355,8 @@
 				"scripts/zero_pose_controller.py",
 				"scripts/gui_controller.py",
 				"scripts/ros2_control_gui.py",
-				"scripts/wasd_controller.py"
+				"scripts/wasd_controller.py",
+				"scripts/wasd_controller_v2.py"
 			],
 			"type" : "file"
 		},

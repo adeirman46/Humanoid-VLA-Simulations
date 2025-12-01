@@ -10,6 +10,7 @@
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/lib/g1_controller/gui_controller.py
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/lib/g1_controller/ros2_control_gui.py
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/lib/g1_controller/wasd_controller.py
+/home/irman/Humanoid-VLA-Simulations/install/g1_controller/lib/g1_controller/wasd_controller_v2.py
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/share/g1_controller/config/g1_controllers.yaml
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/share/g1_controller/launch/robot_wasd_control.launch.py
 /home/irman/Humanoid-VLA-Simulations/install/g1_controller/share/g1_controller/launch/robot_with_controller.launch.py
