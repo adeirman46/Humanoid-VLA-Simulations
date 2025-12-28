@@ -73,7 +73,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/gui_controller.py"
     "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/ros2_control_gui.py"
     "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/wasd_controller.py"
-    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/wasd_controller_v2.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/mujoco_g1_simulator.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/mujoco_wasd_controller.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/mujoco_wasd_controller_v2.py"
+    "/home/irman/Humanoid-VLA-Simulations/src/g1_controller/scripts/mujoco_rl_env.py"
     )
 endif()
 

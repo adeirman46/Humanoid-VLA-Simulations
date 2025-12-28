@@ -20,7 +20,10 @@ install(PROGRAMS
   scripts/gui_controller.py
   scripts/ros2_control_gui.py
   scripts/wasd_controller.py
-  scripts/wasd_controller_v2.py
+  scripts/mujoco_g1_simulator.py
+  scripts/mujoco_wasd_controller.py
+  scripts/mujoco_wasd_controller_v2.py
+  scripts/mujoco_rl_env.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

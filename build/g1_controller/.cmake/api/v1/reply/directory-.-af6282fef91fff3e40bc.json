@@ -101,19 +101,19 @@
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 28,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 3,
-				"line" : 33,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 9,
 				"file" : 3,
-				"line" : 42,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -356,7 +356,10 @@
 				"scripts/gui_controller.py",
 				"scripts/ros2_control_gui.py",
 				"scripts/wasd_controller.py",
-				"scripts/wasd_controller_v2.py"
+				"scripts/mujoco_g1_simulator.py",
+				"scripts/mujoco_wasd_controller.py",
+				"scripts/mujoco_wasd_controller_v2.py",
+				"scripts/mujoco_rl_env.py"
 			],
 			"type" : "file"
 		},
