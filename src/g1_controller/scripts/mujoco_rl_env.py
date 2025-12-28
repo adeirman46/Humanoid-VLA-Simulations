@@ -200,7 +200,7 @@ class G1MuJoCoEnv(gym.Env):
         return observation, reward, terminated, truncated, info
     
     def _compute_reward(self, obs, info):
-        """Compute reward based on task"""
+        """Compute reward based on task - IMPROVED for better walking"""
         base_height = info['base_height']
         
         if self.task == 'stand':
@@ -215,14 +215,44 @@ class G1MuJoCoEnv(gym.Env):
             reward = height_reward + velocity_penalty
             
         elif self.task == 'walk':
-            # Reward for forward motion while maintaining balance
+            # IMPROVED WALKING REWARD
+            # Get velocities
+            joint_pos = obs[:self.num_motors]
+            joint_vel = obs[self.num_motors:self.num_motors*2]
+            base_quat = obs[self.num_motors*2:self.num_motors*2+4]
             base_vel = obs[-6:]  # Last 6 elements are base velocity
+            
+            # 1. Forward velocity reward (MAIN OBJECTIVE - increased weight)
             forward_vel = base_vel[0]  # x-velocity
+            forward_reward = 2.0 * forward_vel  # Increased from 1.0 to 2.0
             
-            forward_reward = forward_vel
-            height_penalty = -abs(base_height - 0.75)
+            # 2. Height maintenance (stay upright, not too strict)
+            target_height = 0.75
+            height_diff = abs(base_height - target_height)
+            height_reward = -2.0 * height_diff  # Penalty for deviation
             
-            reward = forward_reward + height_penalty
+            # 3. Upright orientation (quaternion w should be close to 1)
+            # w component of quaternion (1.0 = perfectly upright)
+            upright_reward = 1.0 * (base_quat[0] - 1.0)**2  # Squared error
+            upright_reward = -upright_reward
+            
+            # 4. Alive bonus (encourage not falling)
+            alive_bonus = 1.0 if base_height > 0.4 else 0.0
+            
+            # 5. Energy efficiency (penalize excessive joint accelerations)
+            energy_penalty = -0.0005 * np.sum(np.square(joint_vel))
+            
+            # 6. Lateral stability (penalize sideways movement)
+            lateral_vel = abs(base_vel[1])  # y-velocity
+            lateral_penalty = -0.5 * lateral_vel
+            
+            # 7. Torso yaw stability (penalize spinning)
+            yaw_vel = abs(base_vel[5])  # Angular velocity around z
+            yaw_penalty = -0.5 * yaw_vel
+            
+            # Total reward
+            reward = (forward_reward + height_reward + upright_reward + 
+                     alive_bonus + energy_penalty + lateral_penalty + yaw_penalty)
             
         else:  # balance
             # Simple balance reward
