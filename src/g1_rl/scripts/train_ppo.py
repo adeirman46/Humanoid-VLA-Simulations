@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Stable-Baselines3 PPO Training for Unitree G1 - IMPROVED VERSION
-Better hyperparameters and reward shaping for walking
+Stable-Baselines3 PPO Training - OPTIMIZED for Soldier-Like Walking
+Hyperparameters tuned for stable torso and coordinated gait
 """
 
 import gymnasium as gym
@@ -14,6 +14,7 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
 from stable_baselines3.common.monitor import Monitor
+import torch
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../g1_controller/scripts'))
@@ -32,29 +33,23 @@ def make_env(rank, task='walk', render=False):
 
 def train_ppo(
     num_envs: int = 16,
-    total_timesteps: int = 20_000_000,
+    total_timesteps: int = 10_000_000,
     save_dir: str = None,
-    learning_rate: float = 5e-4,  # Increased for faster learning
-    n_steps: int = 4096,  # Increased for better exploration
-    batch_size: int = 128,  # Larger batches
-    n_epochs: int = 20,  # More epochs per update
 ):
-    """
-    Train G1 robot using PPO with IMPROVED hyperparameters
-    """
+    """Train G1 with OPTIMIZED hyperparameters for soldier-like walking"""
     
     print("\n" + "="*80)
-    print("PPO Training for Unitree G1 (IMPROVED - Better Walking)")
+    print("PPO Training - OPTIMIZED for Soldier-Like Walking")
     print("="*80 + "\n")
     
     if save_dir is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        save_dir = f"checkpoints/sb3_ppo_g1_improved_{timestamp}"
+        save_dir = f"checkpoints/soldier_walk_{timestamp}"
     
     os.makedirs(save_dir, exist_ok=True)
     print(f"Checkpoints: {save_dir}\n")
     
-    # Create environments - all same render mode
+    # Create environments
     print(f"Creating {num_envs} parallel environments...")
     if num_envs > 1:
         env = SubprocVecEnv([make_env(i, task='walk', render=False) for i in range(num_envs)])
@@ -66,21 +61,23 @@ def train_ppo(
     # Eval environment
     eval_env = DummyVecEnv([make_env(0, task='walk', render=False)])
     
-    print("IMPROVED Training configuration:")
+    print("OPTIMIZED Hyperparameters:")
     print(f"  Total timesteps: {total_timesteps:,}")
-    print(f"  Parallel environments: {num_envs}")
-    print(f"  Learning rate: {learning_rate} (INCREASED)")
-    print(f"  Steps per env: {n_steps} (INCREASED)")
-    print(f"  Batch size: {batch_size} (LARGER)")
-    print(f"  Epochs per update: {n_epochs} (MORE)")
-    print(f"  Entropy coefficient: 0.02 (INCREASED for exploration)")
+    print(f"  Environments: {num_envs}")
+    print(f"  Learning rate: 3e-4 (conservative for stability)")
+    print(f"  Gamma: 0.998 (long-term focus)")
+    print(f"  Steps per env: 8192 (extensive exploration)")
+    print(f"  Batch size: 256 (large, stable updates)")
+    print(f"  Epochs: 30 (thorough learning)")
+    print(f"  Entropy: 0.01 (focused policy)")
+    print(f"  Clip range: 0.15 (tight for stability)")
     print("")
     
     # Callbacks
     checkpoint_callback = CheckpointCallback(
         save_freq=max(100000 // num_envs, 1),
         save_path=save_dir,
-        name_prefix='g1_ppo_improved',
+        name_prefix='soldier_walk',
     )
     
     eval_callback = EvalCallback(
@@ -93,19 +90,19 @@ def train_ppo(
         n_eval_episodes=10,
     )
     
-    # Create PPO model with IMPROVED hyperparameters
-    print("Creating PPO model with improved hyperparameters...")
+    # PPO model with OPTIMIZED hyperparameters
+    print("Creating PPO model with optimized hyperparameters...")
     model = PPO(
         policy='MlpPolicy',
         env=env,
-        learning_rate=learning_rate,
-        n_steps=n_steps,
-        batch_size=batch_size,
-        n_epochs=n_epochs,
-        gamma=0.995,  # Slightly higher discount for long-term walking
-        gae_lambda=0.98,  # Higher GAE for better credit assignment
-        clip_range=0.2,
-        ent_coef=0.02,  # INCREASED for more exploration
+        learning_rate=3e-4,        # Conservative for stability
+        n_steps=8192,              # Extensive exploration
+        batch_size=256,            # Large batches for stability
+        n_epochs=30,               # Thorough learning per update
+        gamma=0.998,               # Long-term reward focus
+        gae_lambda=0.98,           # Better credit assignment
+        clip_range=0.15,           # Tighter clipping for stability
+        ent_coef=0.01,             # Focused policy (not too random)
         vf_coef=0.5,
         max_grad_norm=0.5,
         verbose=1,
@@ -117,11 +114,12 @@ def train_ppo(
         ),
     )
     
-    print("✓ Model created with improved architecture\n")
-    print(f"Using device: {model.device}\n")
+    print("✓ Model created\n")
+    print(f"Device: {model.device}\n")
     
-    print("Starting improved training...")
-    print("With better reward shaping, this should learn faster!")
+    print("="*80)
+    print("Starting training for soldier-like walking...")
+    print("Expected: Stable torso, coordinated arm-leg swing, rhythmic gait")
     print("="*80 + "\n")
     
     try:
@@ -131,7 +129,7 @@ def train_ppo(
             progress_bar=True,
         )
     except KeyboardInterrupt:
-        print("\n\nTraining interrupted")
+        print("\n\nInterrupted")
     
     # Save final
     final_path = os.path.join(save_dir, 'final_model')
@@ -141,7 +139,7 @@ def train_ppo(
     print("Training Complete!")
     print("="*80)
     print(f"\nFinal model: {final_path}.zip")
-    print(f"Tensorboard: tensorboard --logdir {os.path.join(save_dir, 'tensorboard')}\n")
+    print(f"TensorBoard: tensorboard --logdir {os.path.join(save_dir, 'tensorboard')}\n")
     
     env.close()
     eval_env.close()
@@ -152,7 +150,7 @@ def train_ppo(
 def test_trained_policy(model_path: str, num_episodes: int = 5, render: bool = True):
     """Test a trained policy"""
     print("\n" + "="*80)
-    print("Testing Trained Policy")
+    print("Testing Trained Soldier Walk Policy")
     print("="*80 + "\n")
     
     print(f"Loading: {model_path}.zip")
@@ -163,7 +161,7 @@ def test_trained_policy(model_path: str, num_episodes: int = 5, render: bool = T
     
     print(f"\nRunning {num_episodes} episodes...")
     if render:
-        print("(Watch the MuJoCo viewer)\n")
+        print("Watch for: stable torso, coordinated limbs, marching gait\n")
     
     for episode in range(num_episodes):
         obs, info = env.reset()
@@ -189,21 +187,14 @@ def test_trained_policy(model_path: str, num_episodes: int = 5, render: bool = T
 
 if __name__ == '__main__':
     import argparse
-    import torch
     
-    parser = argparse.ArgumentParser(description='Train G1 with IMPROVED PPO')
-    parser.add_argument('--mode', type=str, default='train', choices=['train', 'test'],
-                        help='Mode: train or test')
-    parser.add_argument('--num-envs', type=int, default=16,
-                        help='Number of parallel environments')
-    parser.add_argument('--timesteps', type=int, default=20_000_000,
-                        help='Total training timesteps')
-    parser.add_argument('--model', type=str, default=None,
-                        help='Model path for testing (without .zip)')
-    parser.add_argument('--save-dir', type=str, default=None,
-                        help='Directory to save checkpoints')
-    parser.add_argument('--no-render', action='store_true',
-                        help='Disable rendering during testing')
+    parser = argparse.ArgumentParser(description='Train soldier-like walking')
+    parser.add_argument('--mode', type=str, default='train', choices=['train', 'test'])
+    parser.add_argument('--num-envs', type=int, default=16)
+    parser.add_argument('--timesteps', type=int, default=10_000_000)
+    parser.add_argument('--model', type=str, default=None)
+    parser.add_argument('--save-dir', type=str, default=None)
+    parser.add_argument('--no-render', action='store_true')
     
     args = parser.parse_args()
     
@@ -217,7 +208,7 @@ if __name__ == '__main__':
     elif args.mode == 'test':
         if args.model is None:
             print("Error: --model required for testing")
-            print("Example: --model checkpoints/sb3_ppo_g1_improved_*/final_model")
+            print("Example: --model checkpoints/soldier_walk_*/final_model")
             sys.exit(1)
         
         test_trained_policy(args.model, render=not args.no_render)

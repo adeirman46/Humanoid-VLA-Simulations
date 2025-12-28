@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
 
 """
-SIMPLE training with visualization - Uses threading for reliable rendering
-This version definitely shows the robot!
+Training with live visualization - OPTIMIZED for Soldier Walking
+Uses callback for reliable rendering during training
 """
 
 import gymnasium as gym
 import sys
 import os
 from datetime import datetime
-import threading
-import time
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv, SubprocVecEnv
 from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback, BaseCallback
@@ -24,33 +22,24 @@ from mujoco_rl_env import G1MuJoCoEnv
 
 
 class RenderCallback(BaseCallback):
-    """
-    Callback to render during training
-    Renders the first environment every N steps
-    """
+    """Callback to show robot during training"""
     def __init__(self, render_freq=100, verbose=0):
         super().__init__(verbose)
         self.render_freq = render_freq
         self.render_env = None
         
     def _on_training_start(self):
-        # Create a separate render environment
-        print("\n🎬 Creating visualization environment...")
+        print("\n🎬 Opening visualization...")
         self.render_env = G1MuJoCoEnv(task='walk', render_mode='human')
         self.render_env.reset()
-        print("✓ MuJoCo viewer should be open now!\n")
+        print("✓ MuJoCo viewer open - watch the robot learn!\n")
         
     def _on_step(self):
-        # Render every N steps using the current policy
         if self.n_calls % self.render_freq == 0 and self.render_env is not None:
-            # Get action from current policy
             obs = self.render_env._get_obs()
             action, _ = self.model.predict(obs, deterministic=False)
-            
-            # Step the render env
             self.render_env.step(action)
             self.render_env.render()
-        
         return True
     
     def _on_training_end(self):
@@ -67,26 +56,26 @@ def make_env(rank, task='walk'):
     return _init
 
 
-def train_ppo_simple_render(
+def train_with_visualization(
     num_envs: int = 16,
-    total_timesteps: int = 20_000_000,
+    total_timesteps: int = 10_000_000,
     save_dir: str = None,
     render_freq: int = 100,
 ):
-    """Train with simple callback-based rendering"""
+    """Train with visualization"""
     
     print("\n" + "="*80)
-    print("PPO Training with SIMPLE Live Visualization")
+    print("SOLDIER WALK Training with Live Visualization")
     print("="*80 + "\n")
     
     if save_dir is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        save_dir = f"checkpoints/sb3_ppo_g1_simple_{timestamp}"
+        save_dir = f"checkpoints/soldier_viz_{timestamp}"
     
     os.makedirs(save_dir, exist_ok=True)
     print(f"Checkpoints: {save_dir}\n")
     
-    # Create training environments (NO rendering)
+    # Create environments
     print(f"Creating {num_envs} training environments...")
     if num_envs > 1:
         env = SubprocVecEnv([make_env(i) for i in range(num_envs)])
@@ -101,15 +90,14 @@ def train_ppo_simple_render(
     print(f"  Timesteps: {total_timesteps:,}")
     print(f"  Environments: {num_envs}")
     print(f"  Render every: {render_freq} steps")
-    print(f"  Learning rate: 5e-4")
-    print(f"  Network: [256, 256, 128]")
+    print(f"  Optimized for: stable torso + coordinated gait")
     print("")
     
     # Callbacks
     checkpoint_callback = CheckpointCallback(
         save_freq=max(100000 // num_envs, 1),
         save_path=save_dir,
-        name_prefix='g1_ppo',
+        name_prefix='soldier_viz',
     )
     
     eval_callback = EvalCallback(
@@ -122,22 +110,21 @@ def train_ppo_simple_render(
         n_eval_episodes=10,
     )
     
-    # Render callback - THIS SHOWS THE ROBOT
     render_callback = RenderCallback(render_freq=render_freq, verbose=1)
     
-    # Model
-    print("Creating PPO model...")
+    # Model with OPTIMIZED hyperparameters
+    print("Creating optimized PPO model...")
     model = PPO(
         policy='MlpPolicy',
         env=env,
-        learning_rate=5e-4,
-        n_steps=4096,
-        batch_size=128,
-        n_epochs=20,
-        gamma=0.995,
+        learning_rate=3e-4,
+        n_steps=8192,
+        batch_size=256,
+        n_epochs=30,
+        gamma=0.998,
         gae_lambda=0.98,
-        clip_range=0.2,
-        ent_coef=0.02,
+        clip_range=0.15,
+        ent_coef=0.01,
         vf_coef=0.5,
         max_grad_norm=0.5,
         verbose=1,
@@ -151,8 +138,7 @@ def train_ppo_simple_render(
     
     print("✓ Model created\n")
     print("="*80)
-    print("Starting training...")
-    print("MuJoCo window will open shortly and show the robot learning!")
+    print("Starting training - MuJoCo window will open shortly!")
     print("="*80 + "\n")
     
     try:
@@ -181,19 +167,15 @@ def train_ppo_simple_render(
 if __name__ == '__main__':
     import argparse
     
-    parser = argparse.ArgumentParser(description='Train with SIMPLE visualization')
-    parser.add_argument('--num-envs', type=int, default=16,
-                        help='Number of parallel training environments')
-    parser.add_argument('--timesteps', type=int, default=20_000_000,
-                        help='Total training timesteps')
-    parser.add_argument('--save-dir', type=str, default=None,
-                        help='Directory to save checkpoints')
-    parser.add_argument('--render-freq', type=int, default=100,
-                        help='Render every N training steps (default: 100)')
+    parser = argparse.ArgumentParser(description='Train with visualization')
+    parser.add_argument('--num-envs', type=int, default=16)
+    parser.add_argument('--timesteps', type=int, default=10_000_000)
+    parser.add_argument('--save-dir', type=str, default=None)
+    parser.add_argument('--render-freq', type=int, default=100)
     
     args = parser.parse_args()
     
-    train_ppo_simple_render(
+    train_with_visualization(
         num_envs=args.num_envs,
         total_timesteps=args.timesteps,
         save_dir=args.save_dir,
