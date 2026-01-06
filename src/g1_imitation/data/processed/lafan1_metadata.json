@@ -1,0 +1,242 @@
+{
+  "dance1_subject1": {
+    "num_frames": 3945,
+    "fps": 30,
+    "duration": 131.5,
+    "joints": 30
+  },
+  "dance1_subject2": {
+    "num_frames": 3945,
+    "fps": 30,
+    "duration": 131.5,
+    "joints": 30
+  },
+  "dance1_subject3": {
+    "num_frames": 3945,
+    "fps": 30,
+    "duration": 131.5,
+    "joints": 30
+  },
+  "dance2_subject1": {
+    "num_frames": 6771,
+    "fps": 30,
+    "duration": 225.7,
+    "joints": 30
+  },
+  "dance2_subject2": {
+    "num_frames": 6771,
+    "fps": 30,
+    "duration": 225.7,
+    "joints": 30
+  },
+  "dance2_subject3": {
+    "num_frames": 6771,
+    "fps": 30,
+    "duration": 225.7,
+    "joints": 30
+  },
+  "dance2_subject4": {
+    "num_frames": 6771,
+    "fps": 30,
+    "duration": 225.7,
+    "joints": 30
+  },
+  "dance2_subject5": {
+    "num_frames": 6771,
+    "fps": 30,
+    "duration": 225.7,
+    "joints": 30
+  },
+  "fallAndGetUp1_subject1": {
+    "num_frames": 5047,
+    "fps": 30,
+    "duration": 168.23333333333332,
+    "joints": 30
+  },
+  "fallAndGetUp1_subject4": {
+    "num_frames": 5047,
+    "fps": 30,
+    "duration": 168.23333333333332,
+    "joints": 30
+  },
+  "fallAndGetUp1_subject5": {
+    "num_frames": 5047,
+    "fps": 30,
+    "duration": 168.23333333333332,
+    "joints": 30
+  },
+  "fallAndGetUp2_subject2": {
+    "num_frames": 4918,
+    "fps": 30,
+    "duration": 163.93333333333334,
+    "joints": 30
+  },
+  "fallAndGetUp2_subject3": {
+    "num_frames": 4918,
+    "fps": 30,
+    "duration": 163.93333333333334,
+    "joints": 30
+  },
+  "fallAndGetUp3_subject1": {
+    "num_frames": 3066,
+    "fps": 30,
+    "duration": 102.2,
+    "joints": 30
+  },
+  "fight1_subject2": {
+    "num_frames": 7347,
+    "fps": 30,
+    "duration": 244.9,
+    "joints": 30
+  },
+  "fight1_subject3": {
+    "num_frames": 7347,
+    "fps": 30,
+    "duration": 244.9,
+    "joints": 30
+  },
+  "fight1_subject5": {
+    "num_frames": 7347,
+    "fps": 30,
+    "duration": 244.9,
+    "joints": 30
+  },
+  "fightAndSports1_subject1": {
+    "num_frames": 7355,
+    "fps": 30,
+    "duration": 245.16666666666666,
+    "joints": 30
+  },
+  "fightAndSports1_subject4": {
+    "num_frames": 7355,
+    "fps": 30,
+    "duration": 245.16666666666666,
+    "joints": 30
+  },
+  "jumps1_subject1": {
+    "num_frames": 7334,
+    "fps": 30,
+    "duration": 244.46666666666667,
+    "joints": 30
+  },
+  "jumps1_subject2": {
+    "num_frames": 7334,
+    "fps": 30,
+    "duration": 244.46666666666667,
+    "joints": 30
+  },
+  "jumps1_subject5": {
+    "num_frames": 7334,
+    "fps": 30,
+    "duration": 244.46666666666667,
+    "joints": 30
+  },
+  "run1_subject2": {
+    "num_frames": 7135,
+    "fps": 30,
+    "duration": 237.83333333333334,
+    "joints": 30
+  },
+  "run1_subject5": {
+    "num_frames": 7135,
+    "fps": 30,
+    "duration": 237.83333333333334,
+    "joints": 30
+  },
+  "run2_subject1": {
+    "num_frames": 7345,
+    "fps": 30,
+    "duration": 244.83333333333334,
+    "joints": 30
+  },
+  "run2_subject4": {
+    "num_frames": 7345,
+    "fps": 30,
+    "duration": 244.83333333333334,
+    "joints": 30
+  },
+  "sprint1_subject2": {
+    "num_frames": 8194,
+    "fps": 30,
+    "duration": 273.1333333333333,
+    "joints": 30
+  },
+  "sprint1_subject4": {
+    "num_frames": 8194,
+    "fps": 30,
+    "duration": 273.1333333333333,
+    "joints": 30
+  },
+  "walk1_subject1": {
+    "num_frames": 7840,
+    "fps": 30,
+    "duration": 261.3333333333333,
+    "joints": 30
+  },
+  "walk1_subject2": {
+    "num_frames": 7840,
+    "fps": 30,
+    "duration": 261.3333333333333,
+    "joints": 30
+  },
+  "walk1_subject5": {
+    "num_frames": 7840,
+    "fps": 30,
+    "duration": 261.3333333333333,
+    "joints": 30
+  },
+  "walk2_subject1": {
+    "num_frames": 7146,
+    "fps": 30,
+    "duration": 238.2,
+    "joints": 30
+  },
+  "walk2_subject3": {
+    "num_frames": 7146,
+    "fps": 30,
+    "duration": 238.2,
+    "joints": 30
+  },
+  "walk2_subject4": {
+    "num_frames": 7146,
+    "fps": 30,
+    "duration": 238.2,
+    "joints": 30
+  },
+  "walk3_subject1": {
+    "num_frames": 7399,
+    "fps": 30,
+    "duration": 246.63333333333333,
+    "joints": 30
+  },
+  "walk3_subject2": {
+    "num_frames": 7399,
+    "fps": 30,
+    "duration": 246.63333333333333,
+    "joints": 30
+  },
+  "walk3_subject3": {
+    "num_frames": 7399,
+    "fps": 30,
+    "duration": 246.63333333333333,
+    "joints": 30
+  },
+  "walk3_subject4": {
+    "num_frames": 7399,
+    "fps": 30,
+    "duration": 246.63333333333333,
+    "joints": 30
+  },
+  "walk3_subject5": {
+    "num_frames": 7399,
+    "fps": 30,
+    "duration": 246.63333333333333,
+    "joints": 30
+  },
+  "walk4_subject1": {
+    "num_frames": 4918,
+    "fps": 30,
+    "duration": 163.93333333333334,
+    "joints": 30
+  }
+}

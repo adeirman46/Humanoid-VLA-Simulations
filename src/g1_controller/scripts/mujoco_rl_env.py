@@ -326,106 +326,61 @@ class G1MuJoCoEnv(gym.Env):
         return np.clip(coupling, -0.5, 0.5)
     
     def _compute_reward(self, obs, action, info):
-        """IMPROVED 10-component reward function for soldier-like walking"""
+        """ULTRA-SIMPLE reward - just 4 components, all positive-focused"""
         base_height = info['base_height']
-        foot_contacts = info['foot_contacts']
         
-        # Extract components from observation
-        joint_pos = obs[:29]
+        # Extract components
         joint_vel = obs[29:58]
-        torso_euler = obs[58:61]  # roll, pitch, yaw
-        torso_angvel = obs[61:64]
-        proj_gravity = obs[64:67]
+        torso_euler = obs[58:61]
         base_linvel = obs[96:99]
         
         if self.task == 'stand':
-            # Standing task - simple
+            # Standing: just maintain height and stay still
             target_height = 0.75
-            height_reward = -abs(base_height - target_height)
-            velocity_penalty = -0.01 * np.sum(np.square(joint_vel))
-            reward = height_reward + velocity_penalty
+            reward = 1.0 - abs(base_height - target_height)
+            return reward
             
         elif self.task == 'walk':
-            # IMPROVED WALKING REWARD - 10 components
+            # ULTRA-SIMPLIFIED WALKING REWARD - 4 components only!
             
-            # 1. FORWARD VELOCITY (3.0 weight) - main objective
-            forward_vel = base_linvel[0]
-            forward_reward = 3.0 * np.clip(forward_vel, 0, 2.0)
-            
-            # 2. TORSO STABILITY - CRITICAL!
-            # 2a. Upright orientation (minimize roll and pitch)
-            roll, pitch, yaw = torso_euler
-            upright_reward = -2.0 * (roll**2 + pitch**2)
-            
-            # 2b. Minimize yaw velocity (no spinning)
-            yaw_vel = torso_angvel[2]
-            yaw_penalty = -1.5 * yaw_vel**2
-            
-            # 2c. Angular momentum minimization
-            angular_momentum = np.sum(np.square(torso_angvel))
-            angular_penalty = -0.5 * angular_momentum
-            
-            # 2d. Projected gravity should point down in robot frame
-            gravity_reward = 1.0 * proj_gravity[2]  # Should be negative
-            
-            # 3. GAIT COORDINATION (CPG-inspired)
-            # 3a. Alternating foot contacts
-            contact_reward = self._reward_alternating_contacts(foot_contacts)
-            
-            # 3b. Arm-leg coupling
-            coupling_reward = self._reward_arm_leg_coupling(joint_vel)
-            
-            # 4. SMOOTHNESS
-            # 4a. Action smoothness (reduce jerk)
-            action_diff = action - self.prev_action
-            smoothness_reward = -0.3 * np.sum(np.square(action_diff))
-            
-            # 4b. Joint acceleration penalty
-            accel_penalty = -0.1 * np.sum(np.square(joint_vel))
-            
-            # 5. ENERGY EFFICIENCY
-            # Penalize high joint velocities (proxy for power)
-            power_penalty = -0.001 * np.sum(np.abs(joint_vel))
-            
-            # 6. HEIGHT MAINTENANCE
+            # 1. STAY STANDING (most important) - POSITIVE reward
+            # Give BIG reward for being at correct height
             target_height = 0.75
-            height_reward = -1.0 * abs(base_height - target_height)
+            height_error = abs(base_height - target_height)
+            standing_reward = 5.0 * (1.0 - height_error)  # Max 5.0 when perfect
             
-            # 7. ALIVE BONUS
-            alive_bonus = 2.0 if base_height > 0.4 else 0.0
+            # 2. STAY UPRIGHT (positive reward for being upright)
+            roll, pitch, yaw = torso_euler
+            tilt_error = np.sqrt(roll**2 + pitch**2)  # Total tilt
+            upright_reward = 3.0 * (1.0 - tilt_error)  # Max 3.0 when upright
             
-            # 8. LATERAL STABILITY (penalize sideways drift)
-            lateral_vel = abs(base_linvel[1])
-            lateral_penalty = -0.5 * lateral_vel
+            # 3. SLOW FORWARD MOTION (bonus, not required)
+            forward_vel = base_linvel[0]
+            if forward_vel > 0 and forward_vel < 0.5:
+                # Reward slow forward walking
+                forward_reward = 2.0 * forward_vel
+            else:
+                forward_reward = 0.0
             
-            # TOTAL REWARD (10 components)
-            reward = (
-                forward_reward +        # Encourage walking
-                upright_reward +        # Keep torso upright
-                yaw_penalty +           # No spinning
-                angular_penalty +       # Minimal angular momentum
-                gravity_reward +        # Gravity sensing
-                contact_reward +        # Alternating gait
-                coupling_reward +       # Arm-leg coordination
-                smoothness_reward +     # Smooth actions
-                accel_penalty +         # Limit accelerations
-                power_penalty +         # Energy efficiency
-                height_reward +         # Maintain height
-                alive_bonus +           # Don't fall
-                lateral_penalty         # Stay straight
-            )
+            # 4. SMOOTHNESS (small bonus for smooth actions)
+            action_diff = action - self.prev_action
+            action_change = np.sum(np.abs(action_diff))
+            smoothness_reward = 1.0 / (1.0 + action_change)  # Max 1.0 when no change
+            
+            # TOTAL: All POSITIVE rewards, max ~11
+            reward = standing_reward + upright_reward + forward_reward + smoothness_reward
             
         else:  # balance
-            reward = -abs(base_height - 0.75)
+            reward = 1.0 - abs(base_height - 0.75)
         
         return reward
     
     def _is_terminated(self, info):
-        """Check if episode should terminate"""
+        """Check if episode should terminate - RELAXED"""
         base_height = info['base_height']
         
-        # Robot fell
-        if base_height < 0.3:
+        # Only terminate if robot falls VERY low (relaxed)
+        if base_height < 0.2:  # Was 0.3, now more forgiving
             return True
         
         return False

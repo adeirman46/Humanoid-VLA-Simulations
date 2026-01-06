@@ -53,13 +53,13 @@ def train_ppo(
     print(f"Creating {num_envs} parallel environments...")
     if num_envs > 1:
         env = SubprocVecEnv([make_env(i, task='walk', render=False) for i in range(num_envs)])
+        # Use same type for eval to avoid warning
+        eval_env = SubprocVecEnv([make_env(num_envs, task='walk', render=False)])
     else:
         env = DummyVecEnv([make_env(0, task='walk', render=False)])
+        eval_env = DummyVecEnv([make_env(1, task='walk', render=False)])
     
     print(f"✓ Created {num_envs} environments\n")
-    
-    # Eval environment
-    eval_env = DummyVecEnv([make_env(0, task='walk', render=False)])
     
     print("OPTIMIZED Hyperparameters:")
     print(f"  Total timesteps: {total_timesteps:,}")

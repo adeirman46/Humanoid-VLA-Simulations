@@ -1,245 +1,242 @@
-# Unitree G1 Humanoid Robot - ROS2 Gazebo Simulation
+# Humanoid VLA Simulations
 
-Complete ROS2 Humble setup for the Unitree G1 humanoid robot with Gazebo simulation and WASD keyboard control.
+Reinforcement learning and imitation learning for Unitree G1 humanoid robot using MuJoCo and ROS2.
 
-## Features
+## Quick Start
 
-- 29 DOF humanoid robot with high-quality meshes
-- Gazebo physics simulation with ros2_control
-- WASD keyboard control for robot movement
-- AWS RoboMaker Small House World environment
+### 1. LAFAN Imitation Learning (Recommended)
 
----
-
-## Prerequisites
-
-- **OS**: Ubuntu 22.04 or 24.04
-- **Micromamba** or Conda
-- **Gazebo**: Gazebo Classic
-- **Terminal emulator**: gnome-terminal, xterm, or konsole
-
----
-
-## Installation
-
-### 1. Install Micromamba
+Train the robot to walk using real human motion capture data:
 
 ```bash
-# Install micromamba if not already installed
-"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
-
-# Restart shell or source your shell config
-source ~/.bashrc  # or ~/.zshrc
+# Start training + live monitoring
+./scripts/run_lafan_training_dual.sh
 ```
 
-### 2. Create ROS2 Environment
+This opens 2 terminals:
+- **Terminal 1**: PPO training (8 parallel environments)
+- **Terminal 2**: Live MuJoCo visualization
+
+**Based on proven implementation**: [DRLoco](https://github.com/rgalljamov/DRLoco)
+
+### 2. MuJoCo WASD Control
+
+Control the robot with keyboard in MuJoCo:
 
 ```bash
-# Create environment with Python 3.11 and ROS2 Humble
-micromamba create -n ros2_env python=3.11 -c conda-forge
-
-# Activate environment
-eval "$(micromamba shell hook --shell bash)"
-micromamba activate ros2_env
-
-# Install ROS2 Humble desktop
-micromamba install -y ros-humble-desktop -c conda-forge -c robostack-staging
+./scripts/launch_mujoco_wasd.sh
 ```
 
-### 3. Install ROS2 Dependencies
+**Controls:**
+- `W/S`: Forward/Backward
+- `A/D`: Turn Left/Right
+- `Space`: Stand still
+- `ESC`: Quit
+
+### 3. RL Training (Custom Locomotion)
+
+Train custom walking policies with PPO:
 
 ```bash
-# Install required ROS2 packages
-micromamba install -y \
-  ros-humble-ros2-control \
-  ros-humble-ros2-controllers \
-  ros-humble-gazebo-ros2-control \
-  ros-humble-joint-state-publisher \
-  ros-humble-robot-state-publisher \
-  ros-humble-xacro \
-  ros-humble-rviz2 \
-  -c conda-forge -c robostack-staging
+./scripts/launch_rl_training.sh
 ```
-
-### 4. Clone Repository
-
-```bash
-# Clone the repository
-git clone https://github.com/adeirman46/Humanoid-VLA-Simulations.git
-cd Humanoid-VLA-Simulations
-```
-
-### 5. Build Workspace
-
-> **Note**: The ros2_control and ros2_controllers packages are already included in the `src/` directory.
-
-```bash
-# Ensure environment is activated
-eval "$(micromamba shell hook --shell bash)"
-micromamba activate ros2_env
-
-# Build the workspace (skip packages with missing dependencies)
-colcon build --packages-skip admittance_controller tricycle_controller
-
-# Source the workspace
-source install/setup.bash
-```
-
-> **Note**: Some controller packages (admittance_controller, tricycle_controller) are skipped because they require additional dependencies (kinematics_interface, ackermann_msgs) that aren't needed for the G1 robot.
-
----
-
-## Running the Simulation
-
-### Quick Start - WASD Control (Recommended)
-
-```bash
-# Make sure you're in the workspace directory
-cd ~/Humanoid-VLA-Simulations
-
-# Activate ROS2 environment
-eval "$(micromamba shell hook --shell bash)"
-micromamba activate ros2_env
-
-# Launch WASD control in separate terminals
-bash launch_wasd_separate_terminal.sh
-```
-
-This will:
-1. Launch Gazebo with the G1 robot (Terminal 1)
-2. Automatically spawn controllers after 5 seconds
-3. Open a new terminal for WASD keyboard control after 14 seconds
-
-### Keyboard Controls (in Terminal 2)
-
-| Key | Action |
-|-----|--------|
-| **W** | Walk Forward |
-| **S** | Walk Backward |
-| **A** | Turn Left (Counterclockwise) |
-| **D** | Turn Right (Clockwise) |
-| **SPACE** | Return to Stand Pose |
-| **ESC** | Quit Controller |
-
-### Stopping the Simulation
-
-Press **Ctrl+C** in Terminal 1 (the Gazebo launch terminal) to stop everything.
-
----
-
-## Available Launch Scripts
-
-```bash
-./launch_g1.sh                      # RViz visualization only
-./launch_gazebo_house.sh            # Gazebo with AWS Small House World
-./launch_wasd_control.sh            # WASD control (single terminal)
-./launch_wasd_separate_terminal.sh  # WASD control (separate terminals) ⭐ Recommended
-```
-
----
-
-## Troubleshooting
-
-### "Package not found" Error
-
-If you see errors like `package 'g1_package' not found`:
-
-```bash
-# Rebuild the workspace
-cd ~/Humanoid-VLA-Simulations
-colcon build --packages-skip admittance_controller tricycle_controller
-source install/setup.bash
-```
-
-### Controller Not Spawning
-
-If controllers fail to spawn:
-
-```bash
-# Check if controller_manager is running
-ros2 service list | grep controller_manager
-
-# Try respawning controllers manually
-ros2 run controller_manager spawner joint_state_broadcaster
-ros2 run controller_manager spawner position_trajectory_controller
-```
-
-### Gazebo Crashes on Launch
-
-```bash
-# Clean build and rebuild
-rm -rf build install log
-colcon build --packages-skip admittance_controller tricycle_controller
-source install/setup.bash
-```
-
----
 
 ## Project Structure
 
 ```
 Humanoid-VLA-Simulations/
 ├── src/
-│   ├── g1_package/              # Robot URDF and meshes
-│   ├── g1_gazebo_sim/           # Gazebo launch files
-│   ├── g1_controller/           # WASD controller and configs
-│   ├── ros2_control/            # ROS2 control framework
-│   └── ros2_controllers/        # ROS2 controller implementations
-├── launch_wasd_separate_terminal.sh  # Main launch script
+│   ├── g1_imitation/          # LAFAN imitation learning
+│   │   ├── scripts/
+│   │   │   ├── train_proven.py    # DRLoco-based training
+│   │   │   ├── monitor_training.py # Live visualization
+│   │   │   ├── lafan_env.py       # Imitation environment
+│   │   │   └── process_lafan.py   # Dataset processing
+│   │   ├── data/
+│   │   │   ├── lafan1_retargeted/ # Raw LAFAN data
+│   │   │   └── processed/         # Processed numpy arrays
+│   │   └── checkpoints/           # Trained models
+│   │
+│   ├── g1_rl/                 # Custom RL training
+│   │   └── scripts/
+│   │       ├── train_ppo.py
+│   │       └── mujoco_rl_env.py
+│   │
+│   └── g1_controller/         # ROS2 control & WASD
+│       └── scripts/
+│           └── wasd_controller.py
+│
+├── scripts/                   # Launch scripts
+│   ├── run_lafan_training_dual.sh
+│   ├── launch_mujoco_wasd.sh
+│   └── launch_rl_training.sh
+│
 └── README.md
 ```
 
----
+## Installation
 
-## Development
-
-### Adding New Behaviors
-
-Edit the WASD controller to add new movement patterns:
+### Prerequisites
 
 ```bash
-# Controller script location
-src/g1_controller/scripts/wasd_controller.py
+# MuJoCo
+sudo apt install libglfw3 libglew-dev
+
+# Micromamba environment
+micromamba create -n ros2_env python=3.11
+micromamba activate ros2_env
+
+# Python packages
+pip install mujoco gymnasium stable-baselines3 numpy pandas torch
 ```
 
-### Modifying Joint Configurations
-
-Edit controller parameters:
+### LAFAN Dataset Setup
 
 ```bash
-# Controller config
-src/g1_controller/config/g1_controllers.yaml
+cd src/g1_imitation
+
+# Download LAFAN1 retargeted data (requires HuggingFace token)
+python3 scripts/download_lafan.py
+
+# Process data
+python3 scripts/process_lafan.py
 ```
 
-### Changing Initial Pose
-
-Edit URDF joint initial values:
-
+**Note**: Add your HuggingFace token to `huggingface.env`:
 ```bash
-# Robot URDF
-src/g1_package/urdf/g1_29dof_ros2_control.urdf
+echo "YOUR_TOKEN_HERE" > huggingface.env
 ```
 
+## Training Details
+
+### LAFAN Imitation Learning
+
+**Architecture** (from DRLoco proven implementation):
+- Network: `[1024, 512]` with Tanh activation
+- Algorithm: PPO with reward scaling (0.1x)
+- Learning rate: 5e-4
+- Batch size: 256
+- n_steps: 4096
+
+**Dataset**: 40 real human motion sequences
+- 16 walking variations
+- 4 running sequences
+- 8 dance moves
+- 12 other skills (jumps, fight, etc.)
+
+**Training Command**:
+```bash
+cd src/g1_imitation
+python3 scripts/train_proven.py --motion walk1_subject1 --num-envs 8 --timesteps 5000000
+```
+
+**Test Trained Model**:
+```bash
+python3 scripts/train_proven.py --mode test --model checkpoints/proven_*/final_model
+```
+
+### Custom RL Training
+
+**Environment**: Custom MuJoCo environment for G1
+- Observation: Joint positions, velocities, body orientation
+- Action: Target joint positions (29 DOF)
+- Reward: Forward velocity + stability + energy efficiency
+
+**Training**:
+```bash
+cd src/g1_rl
+python3 scripts/train_ppo.py --timesteps 10000000
+```
+
+## Available Scripts
+
+### Imitation Learning
+- `run_lafan_training_dual.sh` - Training + live monitoring (2 terminals)
+- `train_single_motion.sh` - Train on specific motion interactively
+- `check_lafan_training.sh` - Check training status
+
+### MuJoCo Control
+- `launch_mujoco_wasd.sh` - WASD keyboard control
+- `launch_mujoco_fixed_base.sh` - Fixed base testing
+
+### RL Training
+- `launch_rl_training.sh` - Start PPO training
+
+### ROS2 (Legacy)
+- `launch_g1.sh` - Spawn robot in Gazebo
+- `launch_gazebo_house.sh` - Spawn in house world
+- `launch_robot_gui.sh` - Joint control GUI
+
+## Monitoring Training
+
+**TensorBoard**:
+```bash
+tensorboard --logdir src/g1_imitation/checkpoints/
+```
+
+**Live Monitoring** (already included in dual script):
+```bash
+cd src/g1_imitation
+python3 scripts/monitor_training.py --checkpoint-dir checkpoints --motion walk1_subject1
+```
+
+## Troubleshooting
+
+### Robot falls/flies during training
+- ✅ Fixed: Robot now spawns at origin (0, 0, 0.75)
+- ✅ Only joint angles copied from reference, not pelvis position
+
+### Training not improving
+- ✅ Using proven DRLoco implementation
+- ✅ Reward scaling (0.1x) applied
+- ✅ Proper hyperparameters from working code
+
+### MuJoCo viewer not opening
+```bash
+# Check OpenGL
+glxinfo | grep "OpenGL version"
+
+# Install if missing
+sudo apt install mesa-utils
+```
+
+## Research & Implementation
+
+**Based on**:
+- [DeepMimic (2018)](https://xbpeng.github.io/projects/DeepMimic/index.html) - Original imitation learning framework
+- [DRLoco](https://github.com/rgalljamov/DRLoco) - Working implementation with SB3
+- [LocoMuJoCo](https://github.com/robfiras/loco-mujoco) - Imitation learning benchmark
+
+**LAFAN1 Dataset**:
+- Source: [HuggingFace](https://huggingface.co/datasets/lvhaidong/LAFAN1_Retargeting_Dataset)
+- 40 sequences retargeted for Unitree G1
+- Format: CSV (pelvis pose + 29 joint angles)
+
+## Hardware Requirements
+
+- **CPU**: 4+ cores recommended (8 parallel environments)
+- **RAM**: 8GB minimum, 16GB recommended
+- **GPU**: Optional (PyTorch auto-detects)
+- **Storage**: ~500MB for LAFAN dataset
+
+## License
+
+See individual package licenses in `src/*/package.xml`
+
+## Contributing
+
+1. Keep imitation learning code in `src/g1_imitation/`
+2. Keep custom RL in `src/g1_rl/`
+3. Don't modify `src/g1_controller/` (ROS2 control)
+4. Add new launch scripts to `scripts/`
+
+## Citation
+
+If using this code, please cite:
+- DeepMimic paper
+- DRLoco implementation
+- LAFAN1 dataset
+
 ---
 
-## Technical Details
-
-- **ROS2 Version**: Humble
-- **Control Framework**: ros2_control with Gazebo plugin
-- **Controllers**:
-  - `joint_state_broadcaster`: Publishes joint states
-  - `position_trajectory_controller`: Accepts trajectory commands
-- **DOF**: 29 joints (legs, waist, arms)
-- **Communication**: ROS2 action interface for trajectory execution
-
----
-
-## Credits
-
-- **Robot Model**: Unitree G1 29-DOF Humanoid
-- **Environment**: AWS RoboMaker Small House World
-- **Framework**: ROS2 Humble with ros2_control
-
----
-
-**Happy Robotics! 🤖**
+**Quick Start**: `./scripts/run_lafan_training_dual.sh` for imitation learning with live visualization! 🤖

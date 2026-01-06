@@ -1,0 +1,89 @@
+# Cleanup Summary
+
+## ✅ Completed
+
+### 1. Removed Extra MD Files
+Deleted 9 documentation files:
+- CRITICAL_FIX.md
+- HOW_TO_MAKE_WASD_WORK.md  
+- LAFAN_CURRICULUM.md
+- LAFAN_DUAL_TRAINING.md
+- MUJOCO_README.md
+- MUJOCO_TEST.md
+- MUJOCO_UPDATE_SUMMARY.md
+- SOLDIER_WALK_QUICKSTART.md
+- STABILITY_FIRST_UPDATE.md
+
+**Kept**: README.md (updated with comprehensive instructions)
+
+### 2. Organized Shell Scripts
+Moved 14 shell scripts from root to `scripts/` folder:
+- check_lafan_training.sh
+- launch_g1.sh
+- launch_gazebo_house.sh
+- launch_lafan_training_viz.sh
+- launch_mujoco_fixed_base.sh
+- launch_mujoco_wasd.sh
+- launch_rl_training.sh
+- launch_robot_gui.sh
+- launch_ros2_control.sh
+- launch_wasd_house.sh
+- launch_wasd_house_single.sh
+- launch_wasd_separate_terminal.sh
+- run_lafan_training_dual.sh ⭐ (main training script)
+- train_single_motion.sh
+
+### 3. Updated README.md
+New comprehensive README includes:
+- Quick start commands
+- Project structure
+- Installation instructions
+- Training details (LAFAN + RL)
+- All available scripts
+- Monitoring instructions
+- Troubleshooting
+- Research citations
+
+## Current Project Structure
+
+```
+Humanoid-VLA-Simulations/
+├── scripts/              # ✨ NEW - All launch scripts
+│   ├── run_lafan_training_dual.sh  # Main: Training + monitoring
+│   ├── launch_mujoco_wasd.sh       # WASD control
+│   └── ...
+│
+├── src/
+│   ├── g1_imitation/    # LAFAN imitation learning
+│   ├── g1_rl/           # Custom RL training
+│   └── g1_controller/   # ROS2 control
+│
+├── README.md            # Updated comprehensive guide
+└── huggingface.env      # HF token for dataset
+```
+
+## How to Run (Updated Paths)
+
+### Main Training
+```bash
+./scripts/run_lafan_training_dual.sh
+```
+
+### WASD Control
+```bash
+./scripts/launch_mujoco_wasd.sh
+```
+
+### Check Training Status
+```bash
+./scripts/check_lafan_training.sh
+```
+
+### Single Motion Training
+```bash
+./scripts/train_single_motion.sh
+```
+
+## Next Steps
+
+All commands now use `./scripts/` prefix. The project is cleaner and more organized!
